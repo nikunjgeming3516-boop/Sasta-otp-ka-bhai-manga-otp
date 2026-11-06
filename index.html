@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEOW SMS — Buy Virtual Numbers (INR)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+/* Same theme as before */
+:root{--bg:#06020d;--panel:rgba(255,255,255,.038);--panel-2:rgba(139,92,246,.075);--stroke:rgba(168,85,247,.16);--stroke-2:rgba(168,85,247,.38);--txt:#efeaff;--muted:#a297bd;--muted-2:#7d719b;--grad:linear-gradient(135deg,#7c3aed,#a855f7 48%,#e879f9);--grad-soft:linear-gradient(135deg,rgba(124,58,237,.22),rgba(232,121,249,.12));--r:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Outfit',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Sora',sans-serif;line-height:1.15;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#0a0416}::-webkit-scrollbar-thumb{background:linear-gradient(#7c3aed,#a855f7);border-radius:20px;border:2px solid #0a0416}
+.bg-fx{position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(1100px 620px at 78% -8%,rgba(124,58,237,.30),transparent 62%),radial-gradient(900px 560px at 6% 12%,rgba(168,85,247,.15),transparent 60%),var(--bg)}
+.orb{position:fixed;border-radius:50%;filter:blur(90px);z-index:-1;pointer-events:none;opacity:.5}
+.orb.a{width:460px;height:460px;background:#7c3aed;top:-140px;right:-120px}
+.orb.b{width:380px;height:380px;background:#d946ef;bottom:-160px;left:-120px}
+.container{width:100%;max-width:1220px;margin:0 auto;padding:0 22px}
+.section{padding:96px 0}
+.center{text-align:center}
+.hidden{display:none!important}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 16px;border-radius:999px;background:var(--panel-2);border:1px solid var(--stroke);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#d8b4fe;margin-bottom:18px}
+.sec-title{font-size:clamp(28px,4.2vw,46px);font-weight:800;margin-bottom:14px}
+.sec-title span{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sec-sub{color:var(--muted);max-width:640px;font-size:16.5px}
+.center .sec-sub{margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:14px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:.25s;white-space:nowrap}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 30px -8px rgba(168,85,247,.75)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 40px -8px rgba(168,85,247,.95)}
+.btn-ghost{background:rgba(255,255,255,.04);border-color:var(--stroke);color:var(--txt)}
+.btn-ghost:hover{background:rgba(168,85,247,.14);border-color:var(--stroke-2)}
+.btn-sm{padding:9px 18px;font-size:13.5px;border-radius:11px}
+.btn-lg{padding:16px 34px;font-size:16px}
+.btn-block{width:100%}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn-danger{background:rgba(251,113,133,.14);border-color:rgba(251,113,133,.35);color:#fda4af}
+.btn-success{background:rgba(52,211,153,.14);border-color:rgba(52,211,153,.35);color:#6ee7b7}
+.btn-warn{background:rgba(251,191,36,.14);border-color:rgba(251,191,36,.35);color:#fcd34d}
+.nav{position:sticky;top:0;z-index:900;background:rgba(6,2,13,.55);backdrop-filter:blur(22px);border-bottom:1px solid rgba(168,85,247,.13)}
+.nav.scrolled{background:rgba(6,2,13,.9);box-shadow:0 12px 40px -18px rgba(0,0,0,.9)}
+.nav-in{display:flex;align-items:center;gap:26px;height:76px}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Sora';font-weight:800;font-size:21px;letter-spacing:-.03em}
+.logo-mark{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:var(--grad);box-shadow:0 8px 26px -6px rgba(168,85,247,.9)}
+.logo-mark svg{width:26px;height:26px}
+.logo b{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:4px;margin-left:14px}
+.nav-links a{padding:9px 15px;border-radius:11px;font-size:14.5px;font-weight:500;color:#c3b8dd;transition:.22s}
+.nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(168,85,247,.13)}
+.nav-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
+.burger{display:none;width:44px;height:44px;border-radius:12px;place-items:center;background:rgba(255,255,255,.05);border:1px solid var(--stroke);cursor:pointer}
+.hero{padding:64px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(38px,5.6vw,66px);font-weight:800;margin-bottom:20px}
+.hero h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p.lead{color:var(--muted);font-size:17.5px;max-width:560px;margin-bottom:26px}
+.hero-pills{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:32px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border-radius:999px;background:rgba(168,85,247,.09);border:1px solid var(--stroke);font-size:13px;font-weight:500;color:#d5c9ee}
+.pill i{font-size:11.5px;color:#c084fc}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:36px}
+.mascot-wrap{position:relative;display:grid;place-items:center;min-height:440px}
+.mascot-glow{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(168,85,247,.55),transparent 66%);filter:blur(46px)}
+.mascot{position:relative;width:100%;max-width:430px;z-index:2}
+.float-card{position:absolute;z-index:3;padding:11px 15px;border-radius:14px;background:rgba(22,10,45,.82);border:1px solid var(--stroke-2);backdrop-filter:blur(18px);box-shadow:0 18px 44px -16px rgba(0,0,0,.9);font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:10px}
+.float-card .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--grad);font-size:13px;color:#fff}
+.float-card small{display:block;font-size:10.5px;color:var(--muted)}
+.fc-1{top:8%;left:-2%}.fc-2{bottom:16%;right:-3%}.fc-3{bottom:2%;left:4%}
+.card{background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.018));border:1px solid var(--stroke);border-radius:var(--r);padding:28px;backdrop-filter:blur(16px);transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:rgba(168,85,247,.32)}
+.card .ic-box{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;font-size:21px;margin-bottom:18px;background:var(--grad-soft);border:1px solid var(--stroke-2);color:#d8b4fe}
+.card h3{font-size:18px;font-weight:700;margin-bottom:9px}
+.card p{color:var(--muted);font-size:14.3px;line-height:1.65}
+.grid{display:grid;gap:22px}
+.g-2{grid-template-columns:repeat(2,1fr)}.g-3{grid-template-columns:repeat(3,1fr)}.g-4{grid-template-columns:repeat(4,1fr)}
+.tile{display:flex;align-items:center;gap:14px;padding:15px 18px;border-radius:15px;background:rgba(255,255,255,.035);border:1px solid var(--stroke);transition:.28s;cursor:pointer}
+.tile:hover{background:rgba(168,85,247,.12);border-color:var(--stroke-2);transform:translateY(-4px)}
+.tile .flag{font-size:26px}
+.tile .nm{font-weight:600;font-size:14.5px}
+.tile .pr{font-size:12.5px;color:#c084fc;font-weight:600}
+.tile .go{margin-left:auto;color:var(--muted-2);font-size:12px}
+.stats-band{border-radius:26px;padding:46px 34px;background:linear-gradient(135deg,rgba(124,58,237,.22),rgba(232,121,249,.09));border:1px solid var(--stroke-2);backdrop-filter:blur(20px)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.stat b{display:block;font-family:'Sora';font-size:clamp(28px,3.4vw,42px);font-weight:800;background:linear-gradient(120deg,#fff,#e9d5ff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat span{font-size:13.5px;color:#c9bce4;font-weight:500}
+.price-card{padding:32px 28px;border-radius:var(--r);background:var(--panel);border:1px solid var(--stroke);position:relative;display:flex;flex-direction:column}
+.price-card.pop{background:linear-gradient(165deg,rgba(124,58,237,.24),rgba(232,121,249,.09));border-color:rgba(168,85,247,.5)}
+.price-card .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);padding:5px 16px;border-radius:999px;background:var(--grad);font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;white-space:nowrap}
+.price-card h3{font-size:19px;margin-bottom:6px}
+.price-card .amt{font-family:'Sora';font-size:40px;font-weight:800;margin:14px 0 4px}
+.price-card .amt small{font-size:14px;color:var(--muted)}
+.price-card ul{list-style:none;margin:20px 0 26px;display:flex;flex-direction:column;gap:12px}
+.price-card li{display:flex;align-items:center;gap:11px;font-size:14px;color:#cabfe4}
+.price-card li i{color:#34d399;font-size:13px}
+.price-card .btn{margin-top:auto}
+.faq-wrap{max-width:840px;margin:0 auto;display:flex;flex-direction:column;gap:13px}
+.faq{background:var(--panel);border:1px solid var(--stroke);border-radius:16px;overflow:hidden}
+.faq.open{border-color:var(--stroke-2);background:var(--panel-2)}
+.faq-q{width:100%;padding:19px 22px;display:flex;align-items:center;gap:15px;background:none;border:none;cursor:pointer;text-align:left;font-weight:600;font-size:15.5px}
+.faq-q .qi{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:rgba(168,85,247,.15);color:#c084fc;font-size:12px;flex-shrink:0}
+.faq-q .ch{margin-left:auto;color:var(--muted);font-size:13px;transition:.3s}
+.faq.open .ch{transform:rotate(180deg);color:#e879f9}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .38s}
+.faq-a p{padding:0 22px 20px 67px;color:var(--muted);font-size:14.2px}
+footer{border-top:1px solid var(--stroke);margin-top:70px;padding:60px 0 0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.07))}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:40px;padding-bottom:48px}
+.foot-grid h5{font-size:14.5px;font-weight:700;margin-bottom:18px}
+.foot-grid ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.foot-grid ul a{font-size:14px;color:var(--muted)}
+.foot-about p{font-size:14px;color:var(--muted);margin:16px 0 20px;max-width:330px}
+.foot-bottom{border-top:1px solid var(--stroke);padding:22px 0;display:flex;justify-content:space-between;flex-wrap:wrap;font-size:13.5px;color:var(--muted-2)}
+.modal{position:fixed;inset:0;z-index:1200;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(4,1,10,.82);backdrop-filter:blur(10px)}
+.modal.open{display:flex}
+.modal-box{width:100%;max-width:460px;background:linear-gradient(170deg,#160a2e,#0c0420);border:1px solid var(--stroke-2);border-radius:24px;padding:34px;position:relative;box-shadow:0 40px 100px -30px rgba(124,58,237,.85);max-height:92vh;overflow:auto}
+.modal-box.wide{max-width:720px}
+.modal-box h3{font-size:23px;margin-bottom:6px}
+.modal-box .sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+.modal-close{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.05);border:1px solid var(--stroke);cursor:pointer;color:var(--muted);z-index:2}
+.modal-close:hover{background:rgba(251,113,133,.18);color:#fda4af}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:13px;font-weight:600;margin-bottom:7px;color:#cbbfe6}
+.inp{width:100%;padding:13px 16px;border-radius:13px;background:rgba(255,255,255,.045);border:1px solid var(--stroke);color:var(--txt);font-size:14.5px;outline:none;transition:.25s}
+.inp:focus{border-color:#a855f7;background:rgba(168,85,247,.09);box-shadow:0 0 0 4px rgba(168,85,247,.13)}
+select.inp{cursor:pointer}select.inp option{background:#160a2e;color:#fff}
+.inp-ico{position:relative}.inp-ico i{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted-2);font-size:14px}.inp-ico .inp{padding-left:44px}
+.form-note{font-size:12.5px;color:var(--muted);margin-top:12px;text-align:center}.form-note a{color:#c084fc;font-weight:600}
+.toast-wrap{position:fixed;top:92px;right:22px;z-index:2000;display:flex;flex-direction:column;gap:10px;pointer-events:none}
+.toast{min-width:260px;max-width:380px;padding:14px 18px;border-radius:14px;background:rgba(22,10,45,.96);border:1px solid var(--stroke-2);backdrop-filter:blur(18px);box-shadow:0 20px 46px -18px rgba(0,0,0,.95);display:flex;align-items:center;gap:12px;font-size:14px;font-weight:500;animation:slideIn .3s}
+@keyframes slideIn{from{opacity:0;transform:translateX(60px)}to{opacity:1;transform:translateX(0)}}
+.toast.out{opacity:0;transform:translateX(60px);transition:.3s}
+.toast .ti{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-size:13px}
+.toast.ok .ti{background:rgba(52,211,153,.16);color:#34d399}.toast.err .ti{background:rgba(251,113,133,.16);color:#fb7185}.toast.info .ti{background:rgba(168,85,247,.18);color:#c084fc}
+.app{display:flex;min-height:100vh;background:var(--bg)}
+.side{width:266px;flex-shrink:0;position:sticky;top:0;height:100vh;overflow-y:auto;background:linear-gradient(180deg,#0d0420,#08020f);border-right:1px solid var(--stroke);padding:22px 16px;display:flex;flex-direction:column;gap:6px;z-index:60}
+.side .logo{padding:0 8px 20px;font-size:19px}.side .logo-mark{width:38px;height:38px;border-radius:11px}.side .logo-mark svg{width:22px;height:22px}
+.side-lbl{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);padding:16px 12px 8px;font-weight:700}
+.side a.si{display:flex;align-items:center;gap:13px;padding:11px 13px;border-radius:12px;font-size:14.2px;font-weight:500;color:#b7a9d4;transition:.22s;cursor:pointer}
+.side a.si i{width:19px;text-align:center;font-size:15px;color:#8b7bb0}
+.side a.si:hover{background:rgba(168,85,247,.12);color:#fff}
+.side a.si.active{background:linear-gradient(90deg,rgba(124,58,237,.35),rgba(168,85,247,.12));color:#fff;box-shadow:inset 3px 0 0 #a855f7}
+.side a.si.active i{color:#e879f9}
+.side a.si.logout{color:#fda4af;margin-top:auto}
+.side .badge-count{margin-left:auto;background:rgba(251,191,36,.2);color:#fcd34d;font-size:10px;font-weight:700;padding:2px 7px;border-radius:8px;min-width:20px;text-align:center}
+.app-main{flex:1;min-width:0;display:flex;flex-direction:column}
+.app-top{position:sticky;top:0;z-index:50;height:70px;display:flex;align-items:center;gap:16px;padding:0 24px;background:rgba(8,2,18,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--stroke)}
+.app-top h2{font-size:17px;font-weight:700}.app-top .spacer{margin-left:auto}
+.bal-chip{display:flex;align-items:center;gap:9px;padding:9px 16px;border-radius:12px;background:linear-gradient(135deg,rgba(52,211,153,.15),rgba(52,211,153,.06));border:1px solid rgba(52,211,153,.3);font-weight:700;font-size:14px;color:#6ee7b7}
+.avatar-btn{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--grad);font-weight:800;font-size:15px;cursor:pointer;border:none}
+.side-toggle{display:none;width:42px;height:42px;border-radius:12px;place-items:center;background:rgba(255,255,255,.05);border:1px solid var(--stroke);cursor:pointer}
+.app-body{padding:26px;flex:1}
+.view{display:none}.view.active{display:block}
+.page-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.page-head h1{font-size:25px;margin-bottom:5px}.page-head p{color:var(--muted);font-size:14px}
+.stat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:26px}
+.stat-card{padding:20px;border-radius:16px;background:var(--panel);border:1px solid var(--stroke);transition:.3s}
+.stat-card:hover{transform:translateY(-4px);border-color:var(--stroke-2)}
+.stat-card .si2{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:16px;margin-bottom:14px;background:var(--grad-soft);border:1px solid var(--stroke-2);color:#d8b4fe}
+.stat-card b{display:block;font-family:'Sora';font-size:23px;font-weight:800;margin-bottom:2px}
+.stat-card span{font-size:12.5px;color:var(--muted)}
+.tbl-wrap{overflow-x:auto;border-radius:16px;border:1px solid var(--stroke);background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+th{text-align:left;padding:14px 18px;font-size:11.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--muted-2);background:rgba(255,255,255,.03);border-bottom:1px solid var(--stroke);white-space:nowrap}
+td{padding:15px 18px;border-bottom:1px solid rgba(168,85,247,.09);color:#d3c9e8;vertical-align:middle}
+tbody tr:hover{background:rgba(168,85,247,.06)}
+.mono{font-family:'Sora',monospace;font-size:12.8px}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;font-size:11.5px;font-weight:700}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.b-active{background:rgba(52,211,153,.14);color:#6ee7b7}.b-wait,.b-pend{background:rgba(251,191,36,.14);color:#fcd34d}
+.b-done{background:rgba(168,85,247,.16);color:#d8b4fe}.b-cancel{background:rgba(251,113,133,.14);color:#fda4af}
+.b-exp{background:rgba(148,163,184,.14);color:#cbd5e1}
+.empty{padding:56px 24px;text-align:center}
+.empty .ei{width:76px;height:76px;border-radius:22px;display:grid;place-items:center;font-size:28px;margin:0 auto 18px;background:var(--grad-soft);border:1px solid var(--stroke-2);color:#c084fc}
+.empty h4{font-size:17px;margin-bottom:8px}.empty p{color:var(--muted);font-size:14px;max-width:400px;margin:0 auto 20px}
+.buy-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:22px}
+.pick{position:relative}
+.pick-btn{width:100%;padding:14px 17px;border-radius:14px;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.045);border:1px solid var(--stroke);cursor:pointer;font-size:14.5px;text-align:left}
+.pick-btn .flag{font-size:21px}.pick-btn .val{flex:1;color:#e6dcfa;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.pick-btn .val.ph{color:var(--muted-2)}
+.pick.open .pick-btn{border-color:#a855f7;box-shadow:0 0 0 4px rgba(168,85,247,.13)}.pick.open .pick-btn>i{transform:rotate(180deg)}
+.pick-menu{position:absolute;top:calc(100% + 8px);left:0;right:0;z-index:80;background:#140829;border:1px solid var(--stroke-2);border-radius:16px;box-shadow:0 30px 70px -24px rgba(0,0,0,.95);display:none;overflow:hidden}
+.pick.open .pick-menu{display:block}
+.pick-search{width:100%;padding:13px 16px;background:rgba(255,255,255,.04);border:none;border-bottom:1px solid var(--stroke);outline:none;font-size:14px}
+.pick-list{max-height:280px;overflow-y:auto;padding:7px}
+.pick-item{display:flex;align-items:center;gap:12px;padding:11px 13px;border-radius:11px;cursor:pointer;font-size:14px}
+.pick-item:hover{background:rgba(168,85,247,.15)}.pick-item .flag{font-size:19px}.pick-item .nm{flex:1}.pick-item .pr{font-size:12.5px;color:#c084fc;font-weight:600}
+.num-card{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid var(--stroke);transition:.28s;flex-wrap:wrap}
+.num-card:hover{border-color:var(--stroke-2)}.num-card .info{flex:1;min-width:150px}
+.num-card .info b{display:block;font-family:'Sora';font-size:15.5px}.num-card .info span{font-size:12.5px;color:var(--muted)}
+.num-card .price{font-family:'Sora';font-weight:800;font-size:17px;color:#e879f9}
+.order-card{border-radius:18px;padding:22px;background:linear-gradient(160deg,rgba(124,58,237,.16),rgba(255,255,255,.03));border:1px solid var(--stroke-2);margin-bottom:18px}
+.order-card .oc-top{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.order-card .oc-top .flag{font-size:30px}.order-card .oc-top h4{font-size:17px;margin-bottom:3px}.order-card .oc-top .sub{font-size:12.5px;color:var(--muted)}
+.order-card .timer{margin-left:auto;padding:9px 16px;border-radius:12px;background:rgba(251,191,36,.13);border:1px solid rgba(251,191,36,.32);font-family:'Sora';font-weight:700;font-size:14px;color:#fcd34d;display:flex;align-items:center;gap:8px}
+.num-box{display:flex;align-items:center;gap:14px;padding:15px 18px;border-radius:14px;background:rgba(0,0,0,.32);border:1px dashed rgba(168,85,247,.4);margin-bottom:16px;flex-wrap:wrap}
+.num-box b{font-family:'Sora';font-size:19px;letter-spacing:.04em;color:#fff}.num-box .copy{margin-left:auto}
+.oc-actions{display:flex;gap:10px;flex-wrap:wrap}
+.sms-list{display:flex;flex-direction:column;gap:11px;margin-top:16px}
+.sms-item{padding:15px 17px;border-radius:14px;background:rgba(52,211,153,.07);border:1px solid rgba(52,211,153,.24)}
+.sms-item .st{display:flex;align-items:center;gap:9px;font-size:12px;color:#6ee7b7;font-weight:700;margin-bottom:8px}
+.sms-item .body{font-family:'Sora';font-size:15px;color:#fff;letter-spacing:.03em;word-break:break-word}
+.wallet-hero{border-radius:22px;padding:32px;margin-bottom:24px;background:linear-gradient(135deg,rgba(124,58,237,.35),rgba(232,121,249,.14));border:1px solid rgba(168,85,247,.42)}
+.wallet-hero .lbl{font-size:13px;color:#d4c8ef;letter-spacing:.06em;text-transform:uppercase;font-weight:600;margin-bottom:8px}
+.wallet-hero .bal{font-family:'Sora';font-size:46px;font-weight:800;letter-spacing:-.03em}.wallet-hero .bal small{font-size:24px;color:#d8b4fe;margin-right:4px}
+.amount-chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px}
+.chip{padding:9px 17px;border-radius:11px;background:rgba(255,255,255,.045);border:1px solid var(--stroke);cursor:pointer;font-size:13.5px;font-weight:600}
+.chip:hover{border-color:var(--stroke-2);background:rgba(168,85,247,.13)}.chip.sel{background:var(--grad);border-color:transparent;color:#fff}
+.prof-head{display:flex;align-items:center;gap:20px;padding:26px;border-radius:20px;background:var(--panel);border:1px solid var(--stroke);margin-bottom:22px;flex-wrap:wrap}
+.prof-head .big-av{width:82px;height:82px;border-radius:24px;display:grid;place-items:center;font-family:'Sora';font-size:31px;font-weight:800;background:var(--grad)}
+.prof-head h3{font-size:21px;margin-bottom:4px}.prof-head p{font-size:13.5px;color:var(--muted)}
+.tabpane{display:none}.tabpane.active{display:block}
+.provider-card{background:linear-gradient(160deg,rgba(124,58,237,.14),rgba(255,255,255,.02));border:1px solid var(--stroke-2);border-radius:18px;padding:22px;margin-bottom:16px}
+.provider-card .pc-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.provider-card .pc-logo{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:22px;font-weight:800;background:var(--grad);color:#fff;flex-shrink:0}
+.provider-card .pc-info{flex:1;min-width:180px}.provider-card .pc-info h4{font-size:17px;margin-bottom:4px}
+.provider-card .pc-info .pc-url{font-family:'Sora',monospace;font-size:12px;color:var(--muted);word-break:break-all}
+.provider-card .pc-body{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:16px 0;padding:16px 0;border-top:1px solid rgba(168,85,247,.13);border-bottom:1px solid rgba(168,85,247,.13)}
+.provider-card .pc-body .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-2);font-weight:700;margin-bottom:3px}
+.provider-card .pc-body .val{font-family:'Sora';font-size:15px;font-weight:700;color:#fff}
+.provider-card .pc-body .val.green{color:#6ee7b7}.provider-card .pc-body .val.purple{color:#d8b4fe}
+.provider-card .pc-actions{display:flex;gap:8px;flex-wrap:wrap}
+.alert{padding:14px 18px;border-radius:14px;margin-bottom:18px;display:flex;align-items:flex-start;gap:12px;font-size:13.5px;line-height:1.6}
+.alert i{font-size:16px;flex-shrink:0;margin-top:2px}
+.alert.warn{background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.35);color:#fcd34d}
+.alert.info{background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.35);color:#93c5fd}
+.alert.err{background:rgba(251,113,133,.1);border:1px solid rgba(251,113,133,.35);color:#fda4af}
+.alert.ok{background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.35);color:#6ee7b7}
+@media(max-width:1080px){.hero-grid{grid-template-columns:1fr}.mascot-wrap{min-height:360px;order:-1}.mascot{max-width:330px}.g-4{grid-template-columns:repeat(2,1fr)}.stat-grid{grid-template-columns:repeat(3,1fr)}.foot-grid{grid-template-columns:1fr 1fr}.provider-card .pc-body{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.nav-links{display:none}.nav-actions .btn-ghost{display:none}.burger{display:grid}.g-3{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}.side{position:fixed;left:0;top:0;height:100vh;transform:translateX(-100%);transition:transform .32s}.side.open{transform:translateX(0)}.side-toggle{display:grid}.app-body{padding:18px}.buy-grid{grid-template-columns:1fr}.side-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:55;display:none}.side-overlay.on{display:block}}
+@media(max-width:640px){.section{padding:64px 0}.container{padding:0 16px}.g-2,.g-3,.g-4{grid-template-columns:1fr}.stat-grid{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:1fr 1fr}.foot-grid{grid-template-columns:1fr}.modal-box{padding:26px 20px}.wallet-hero .bal{font-size:36px}.provider-card .pc-body{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="bg-fx"></div>
+<div class="orb a"></div>
+<div class="orb b"></div>
+
+<!-- NAVBAR -->
+<header class="nav" id="nav">
+  <div class="container nav-in">
+    <a href="#home" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9.5 4.6 4l4 3.2h6.8L19.4 4l.6 5.5c.9 1.2 1.4 2.7 1.4 4.3 0 3.9-3.4 7.2-9.4 7.2S2.6 17.7 2.6 13.8c0-1.6.5-3.1 1.4-4.3Z" fill="#fff" opacity=".95"/><circle cx="9" cy="13" r="1.35" fill="#6d28d9"/><circle cx="15" cy="13" r="1.35" fill="#6d28d9"/></svg></span>
+      <span>MEOW <b>SMS</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#buy">Buy Number</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-ghost btn-sm" onclick="openAuth('login')"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+      <button class="btn btn-primary btn-sm" onclick="openAuth('register')"><i class="fa-solid fa-user-plus"></i> Register</button>
+      <button class="burger" onclick="toggleMobile()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- SITE -->
+<main id="site">
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-bolt"></i> Real API Integration</span>
+        <h1>Meow SMS <span class="grad">Bot</span></h1>
+        <p class="lead">Get Virtual Numbers & Receive OTP/SMS Instantly — Powered by Fox SMS & Simxpro.</p>
+        <div class="hero-pills">
+          <span class="pill"><i class="fa-solid fa-bolt"></i> Real Numbers</span>
+          <span class="pill"><i class="fa-solid fa-tag"></i> INR Pricing</span>
+          <span class="pill"><i class="fa-solid fa-shield-halved"></i> Secure</span>
+          <span class="pill"><i class="fa-solid fa-headset"></i> 24x7 Support</span>
+        </div>
+        <div class="hero-btns">
+          <button class="btn btn-primary btn-lg" onclick="startBuying()"><i class="fa-solid fa-cart-shopping"></i> Buy Number Now</button>
+          <button class="btn btn-ghost btn-lg" onclick="openAuth('register')"><i class="fa-solid fa-user-plus"></i> Get Started</button>
+        </div>
+      </div>
+      <div class="mascot-wrap">
+        <div class="mascot-glow"></div>
+        <div class="float-card fc-1"><div class="ic"><i class="fa-solid fa-shield-halved"></i></div><div><b>Real OTP</b><small>From provider</small></div></div>
+        <div class="float-card fc-2"><div class="ic" style="background:linear-gradient(135deg,#10b981,#34d399)"><i class="fa-solid fa-check"></i></div><div><b>Verified</b><small>Live</small></div></div>
+        <div class="float-card fc-3"><div class="ic" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)"><i class="fa-solid fa-globe"></i></div><div><b>110+ Countries</b><small>Fox + Simxpro</small></div></div>
+        <svg class="mascot" viewBox="0 0 420 470" fill="none"><defs><linearGradient id="catG" x1="80" y1="60" x2="340" y2="420"><stop stop-color="#c084fc"/><stop offset=".5" stop-color="#a855f7"/><stop offset="1" stop-color="#6d28d9"/></linearGradient><linearGradient id="bodyG" x1="120" y1="250" x2="300" y2="440"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#4c1d95"/></linearGradient><linearGradient id="crownG" x1="150" y1="20" x2="280" y2="90"><stop stop-color="#fde68a"/><stop offset=".5" stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/></linearGradient><linearGradient id="phoneG" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1e1036"/><stop offset="1" stop-color="#0b0418"/></linearGradient></defs><ellipse cx="210" cy="446" rx="128" ry="20" fill="#a855f7" opacity=".15"/><path d="M330 380c40-10 56-52 34-84-16-24-52-26-62-4" stroke="url(#bodyG)" stroke-width="22" stroke-linecap="round" fill="none"/><path d="M132 372c0-56 34-96 78-96s78 40 78 96c0 40-26 62-78 62s-78-22-78-62Z" fill="url(#bodyG)"/><path d="M120 130 118 62c0-8 8-12 14-7l52 40" fill="url(#catG)"/><path d="M300 130 302 62c0-8-8-12-14-7l-52 40" fill="url(#catG)"/><ellipse cx="210" cy="168" rx="96" ry="88" fill="url(#catG)"/><path d="M150 84 162 40l26 24 22-30 22 30 26-24 12 44c-30 14-90 14-120 0Z" fill="url(#crownG)"/><circle cx="210" cy="66" r="7" fill="#ec4899"/><ellipse cx="178" cy="168" rx="19" ry="22" fill="#0b0418"/><ellipse cx="242" cy="168" rx="19" ry="22" fill="#0b0418"/><circle cx="184" cy="160" r="7" fill="#fff"/><circle cx="248" cy="160" r="7" fill="#fff"/><path d="M203 198h14l-7 9-7-9Z" fill="#f0abfc"/><g transform="rotate(-9 210 350)"><rect x="150" y="268" width="120" height="190" rx="20" fill="url(#phoneG)" stroke="#a855f7" stroke-width="3.5"/><rect x="162" y="288" width="96" height="140" rx="10" fill="#160a2e"/><rect x="174" y="302" width="58" height="26" rx="9" fill="#7c3aed"/><rect x="186" y="340" width="60" height="26" rx="9" fill="#34d399" opacity=".9"/></g></svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="buy" style="padding-top:20px">
+    <div class="container">
+      <div class="center" style="margin-bottom:44px">
+        <span class="eyebrow"><i class="fa-solid fa-globe"></i> Buy Number</span>
+        <h2 class="sec-title">Choose From <span>Available Countries</span></h2>
+        <p class="sec-sub">Real numbers from Fox SMS & Simxpro. Prices in INR.</p>
+      </div>
+      <div class="grid g-4" id="countryTiles"></div>
+      <div class="center" style="margin-top:40px">
+        <button class="btn btn-primary btn-lg" onclick="startBuying()"><i class="fa-solid fa-cart-shopping"></i> Browse Numbers</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="center" style="margin-bottom:54px">
+        <span class="eyebrow"><i class="fa-solid fa-tags"></i> Pricing</span>
+        <h2 class="sec-title">Simple, <span>INR Pricing</span></h2>
+      </div>
+      <div class="grid g-3">
+        <div class="price-card"><h3>Starter</h3><p style="color:var(--muted);font-size:14px">Occasional verification.</p><div class="amt">₹83 <small>min</small></div><ul><li><i class="fa-solid fa-check"></i> All countries</li><li><i class="fa-solid fa-check"></i> All services</li><li><i class="fa-solid fa-check"></i> Instant SMS</li></ul><button class="btn btn-ghost btn-block" onclick="startBuying()">Get Started</button></div>
+        <div class="price-card pop"><span class="tag">Popular</span><h3>Pro</h3><p style="color:#d8b4fe;font-size:14px">Best value.</p><div class="amt">₹415 <small>min</small></div><ul><li><i class="fa-solid fa-check"></i> All Starter</li><li><i class="fa-solid fa-check"></i> Priority</li><li><i class="fa-solid fa-check"></i> 24x7 support</li></ul><button class="btn btn-primary btn-block" onclick="startBuying()">Get Started</button></div>
+        <div class="price-card"><h3>Business</h3><p style="color:var(--muted);font-size:14px">Teams & bulk.</p><div class="amt">₹1,660 <small>min</small></div><ul><li><i class="fa-solid fa-check"></i> All Pro</li><li><i class="fa-solid fa-check"></i> Dedicated</li><li><i class="fa-solid fa-check"></i> API access</li></ul><button class="btn btn-ghost btn-block" onclick="startBuying()">Contact</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="center" style="margin-bottom:44px">
+        <span class="eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+        <h2 class="sec-title">Frequently Asked <span>Questions</span></h2>
+      </div>
+      <div class="faq-wrap" id="faqWrap"></div>
+    </div>
+  </section>
+</main>
+
+<!-- USER DASHBOARD -->
+<div class="app hidden" id="app">
+  <div class="side-overlay" id="sideOverlay" onclick="closeSide()"></div>
+  <aside class="side" id="side">
+    <a href="javascript:void(0)" class="logo" onclick="backToSite()">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9.5 4.6 4l4 3.2h6.8L19.4 4l.6 5.5c.9 1.2 1.4 2.7 1.4 4.3 0 3.9-3.4 7.2-9.4 7.2S2.6 17.7 2.6 13.8c0-1.6.5-3.1 1.4-4.3Z" fill="#fff" opacity=".95"/><circle cx="9" cy="13" r="1.35" fill="#6d28d9"/><circle cx="15" cy="13" r="1.35" fill="#6d28d9"/></svg></span>
+      <span>MEOW <b>SMS</b></span>
+    </a>
+    <div class="side-lbl">Main</div>
+    <a class="si active" data-view="dashboard" onclick="showView('dashboard',this)"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
+    <a class="si" data-view="buy" onclick="showView('buy',this)"><i class="fa-solid fa-cart-shopping"></i> Buy Number</a>
+    <a class="si" data-view="active" onclick="showView('active',this)"><i class="fa-solid fa-tower-broadcast"></i> Active Orders</a>
+    <a class="si" data-view="sms" onclick="showView('sms',this)"><i class="fa-solid fa-comment-sms"></i> Received SMS</a>
+    <div class="side-lbl">Wallet</div>
+    <a class="si" data-view="wallet" onclick="showView('wallet',this)"><i class="fa-solid fa-wallet"></i> Add Money</a>
+    <a class="si" data-view="transactions" onclick="showView('transactions',this)"><i class="fa-solid fa-receipt"></i> Transactions</a>
+    <a class="si" data-view="orders" onclick="showView('orders',this)"><i class="fa-solid fa-clock-rotate-left"></i> Order History</a>
+    <div class="side-lbl">Account</div>
+    <a class="si" data-view="profile" onclick="showView('profile',this)"><i class="fa-solid fa-user"></i> My Profile</a>
+    <a class="si" data-view="admin" onclick="showView('admin',this)"><i class="fa-solid fa-user-shield"></i> Admin Panel</a>
+    <a class="si logout" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+  </aside>
+  <div class="app-main">
+    <div class="app-top">
+      <button class="side-toggle" onclick="openSide()"><i class="fa-solid fa-bars"></i></button>
+      <h2 id="viewTitle">Dashboard</h2>
+      <div class="spacer"></div>
+      <div class="bal-chip"><i class="fa-solid fa-wallet"></i> ₹<span id="topBalance">0.00</span></div>
+      <button class="avatar-btn" id="topAvatar" onclick="showView('profile')">U</button>
+    </div>
+    <div class="app-body">
+
+      <div class="view active" id="view-dashboard">
+        <div class="page-head">
+          <div><h1>Welcome back, <span id="dashName" style="color:#c084fc">User</span> 👋</h1><p>Quick overview.</p></div>
+          <button class="btn btn-primary" onclick="showView('buy')"><i class="fa-solid fa-plus"></i> New Order</button>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-wallet"></i></div><b>₹<span id="statBalance">0.00</span></b><span>Balance</span></div>
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-bag-shopping"></i></div><b id="statTotal">0</b><span>Total Orders</span></div>
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-tower-broadcast"></i></div><b id="statActive">0</b><span>Active</span></div>
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-circle-check"></i></div><b id="statDone">0</b><span>Completed</span></div>
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-coins"></i></div><b>₹<span id="statSpent">0.00</span></b><span>Total Spent</span></div>
+        </div>
+        <h3 style="font-size:16px;margin-bottom:14px">Recent Orders</h3>
+        <div id="recentOrders"></div>
+      </div>
+
+      <div class="view" id="view-buy">
+        <div class="page-head"><div><h1>Buy Virtual Number</h1><p>Real numbers from live providers.</p></div></div>
+        <div id="buyWarning"></div>
+        <div class="buy-grid">
+          <div>
+            <label style="font-size:13px;font-weight:600;color:#cbbfe6;display:block;margin-bottom:8px">Provider</label>
+            <div class="pick" id="pickProvider">
+              <button class="pick-btn" onclick="togglePick('pickProvider')">
+                <span class="flag" id="pFlag">🔌</span>
+                <span class="val ph" id="pVal">Select Provider</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pick-menu">
+                <div class="pick-list" id="providerPickList"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:600;color:#cbbfe6;display:block;margin-bottom:8px">Country</label>
+            <div class="pick" id="pickCountry">
+              <button class="pick-btn" onclick="togglePick('pickCountry')">
+                <span class="flag" id="cFlag">🌍</span>
+                <span class="val ph" id="cVal">Select Country</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pick-menu">
+                <input class="pick-search" placeholder="Search..." oninput="filterCountry(this.value)">
+                <div class="pick-list" id="countryList"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buy-grid" style="grid-template-columns:1fr">
+          <div>
+            <label style="font-size:13px;font-weight:600;color:#cbbfe6;display:block;margin-bottom:8px">Service</label>
+            <div class="pick" id="pickService">
+              <button class="pick-btn" onclick="togglePick('pickService')">
+                <span class="flag" id="sFlag">📱</span>
+                <span class="val ph" id="sVal">Select Service</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pick-menu">
+                <input class="pick-search" placeholder="Search..." oninput="filterService(this.value)">
+                <div class="pick-list" id="serviceList"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="numberResults"></div>
+      </div>
+
+      <div class="view" id="view-active">
+        <div class="page-head"><div><h1>Active Orders</h1><p>Live numbers.</p></div><button class="btn btn-ghost btn-sm" onclick="renderActive()"><i class="fa-solid fa-rotate"></i> Refresh</button></div>
+        <div id="activeList"></div>
+      </div>
+
+      <div class="view" id="view-sms">
+        <div class="page-head"><div><h1>Received SMS</h1><p>All messages.</p></div><button class="btn btn-ghost btn-sm" onclick="refreshSMS()"><i class="fa-solid fa-rotate"></i> Check</button></div>
+        <div id="smsList"></div>
+      </div>
+
+      <div class="view" id="view-wallet">
+        <div class="page-head"><div><h1>Add Money</h1><p>Top up via UPI.</p></div></div>
+        <div class="wallet-hero">
+          <div class="lbl">Current Balance</div>
+          <div class="bal"><small>₹</small><span id="walletBalance">0.00</span></div>
+        </div>
+        <div class="grid g-2">
+          <div class="card" style="padding:24px">
+            <h3 style="font-size:16px;margin-bottom:8px">Deposit Amount (INR)</h3>
+            <p style="font-size:12.5px;color:var(--muted);margin-bottom:18px">Min ₹83 · Max ₹1,00,000</p>
+            <div class="amount-chips" id="amountChips">
+              <div class="chip" onclick="setAmount(83,this)">₹83</div>
+              <div class="chip sel" onclick="setAmount(415,this)">₹415</div>
+              <div class="chip" onclick="setAmount(830,this)">₹830</div>
+              <div class="chip" onclick="setAmount(1660,this)">₹1660</div>
+              <div class="chip" onclick="setAmount(4150,this)">₹4150</div>
+            </div>
+            <div class="field">
+              <label>Amount (₹)</label>
+              <div class="inp-ico"><i class="fa-solid fa-indian-rupee-sign"></i>
+                <input class="inp" type="number" id="depositAmount" value="415" min="83" max="100000" step="1">
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block" style="margin-top:10px" onclick="createUPIOrder()"><i class="fa-solid fa-qrcode"></i> Create UPI Payment</button>
+          </div>
+          <div class="card" style="padding:24px"><h3 style="font-size:16px;margin-bottom:18px">Recent Deposits</h3><div id="depositList"></div></div>
+        </div>
+      </div>
+
+      <div class="view" id="view-transactions">
+        <div class="page-head"><div><h1>Transactions</h1><p>Wallet activity.</p></div></div>
+        <div class="tbl-wrap"><table><thead><tr><th>ID</th><th>Type</th><th>Description</th><th>Amount</th><th>Status</th><th>Date</th></tr></thead><tbody id="txBody"></tbody></table></div>
+      </div>
+
+      <div class="view" id="view-orders">
+        <div class="page-head"><div><h1>Order History</h1><p>All purchases.</p></div></div>
+        <div class="tbl-wrap"><table><thead><tr><th>Order ID</th><th>Country</th><th>Service</th><th>Number</th><th>Price</th><th>Status</th><th>Date</th></tr></thead><tbody id="ordersBody"></tbody></table></div>
+      </div>
+
+      <div class="view" id="view-profile">
+        <div class="page-head"><div><h1>My Profile</h1><p>Account info.</p></div></div>
+        <div class="prof-head">
+          <div class="big-av" id="profAv">U</div>
+          <div><h3 id="profName">User</h3><p id="profEmail">user@example.com</p><p style="font-size:12.5px;margin-top:6px;color:#c084fc">ID: <span class="mono" id="profId">—</span></p></div>
+        </div>
+        <div class="grid g-2">
+          <div class="card" style="padding:24px">
+            <h3 style="font-size:16px;margin-bottom:18px">Account</h3>
+            <div class="field"><label>Name</label><input class="inp" id="setName"></div>
+            <div class="field"><label>Email</label><input class="inp" id="setEmail" type="email"></div>
+            <button class="btn btn-primary" onclick="saveProfile()"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+          </div>
+          <div class="card" style="padding:24px">
+            <h3 style="font-size:16px;margin-bottom:18px">Change Password</h3>
+            <div class="field"><label>Current</label><input class="inp" type="password"></div>
+            <div class="field"><label>New</label><input class="inp" type="password"></div>
+            <button class="btn btn-ghost" onclick="toast('Password updated','ok')"><i class="fa-solid fa-key"></i> Update</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="view" id="view-admin">
+        <div class="page-head"><div><h1>Admin Panel</h1><p>Manage providers & services.</p></div></div>
+        <div class="card" style="text-align:center;padding:46px">
+          <div class="ic-box" style="margin:0 auto 18px"><i class="fa-solid fa-user-shield"></i></div>
+          <h3 style="font-size:19px;margin-bottom:10px">Open Admin Panel</h3>
+          <button class="btn btn-primary" onclick="openAdmin()"><i class="fa-solid fa-arrow-right-to-bracket"></i> Launch Admin</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div class="app hidden" id="adminApp">
+  <div class="side-overlay" id="adminOverlay" onclick="closeAdminSide()"></div>
+  <aside class="side" id="adminSide">
+    <a href="javascript:void(0)" class="logo" onclick="closeAdmin()">
+      <span class="logo-mark" style="background:linear-gradient(135deg,#e879f9,#7c3aed)"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9.5 4.6 4l4 3.2h6.8L19.4 4l.6 5.5c.9 1.2 1.4 2.7 1.4 4.3 0 3.9-3.4 7.2-9.4 7.2S2.6 17.7 2.6 13.8c0-1.6.5-3.1 1.4-4.3Z" fill="#fff" opacity=".95"/><circle cx="9" cy="13" r="1.35" fill="#6d28d9"/><circle cx="15" cy="13" r="1.35" fill="#6d28d9"/></svg></span>
+      <span>MEOW <b>SMS</b></span>
+    </a>
+    <div class="side-lbl">Admin</div>
+    <a class="si active" onclick="showAdminTab('overview',this)"><i class="fa-solid fa-gauge-high"></i> Overview</a>
+    <a class="si" onclick="showAdminTab('providers',this)"><i class="fa-solid fa-server"></i> API Providers <span class="badge-count" id="provCount">0</span></a>
+    <a class="si" onclick="showAdminTab('services',this)"><i class="fa-solid fa-layer-group"></i> Services <span class="badge-count" id="svcCount">0</span></a>
+    <a class="si" onclick="showAdminTab('deposits',this)"><i class="fa-solid fa-money-bill-transfer"></i> Deposits</a>
+    <a class="si" onclick="showAdminTab('logs',this)"><i class="fa-solid fa-list-check"></i> Logs</a>
+    <a class="si logout" onclick="closeAdmin()"><i class="fa-solid fa-right-from-bracket"></i> Exit</a>
+  </aside>
+  <div class="app-main">
+    <div class="app-top">
+      <button class="side-toggle" onclick="document.getElementById('adminSide').classList.add('open');document.getElementById('adminOverlay').classList.add('on')"><i class="fa-solid fa-bars"></i></button>
+      <h2>Admin Panel</h2>
+      <div class="spacer"></div>
+      <button class="avatar-btn" style="background:linear-gradient(135deg,#e879f9,#7c3aed)">A</button>
+    </div>
+    <div class="app-body">
+
+      <div class="tabpane active" id="tab-overview">
+        <div class="page-head"><div><h1>Overview</h1><p>Statistics.</p></div></div>
+        <div class="stat-grid">
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-users"></i></div><b id="aUsers">0</b><span>Users</span></div>
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-bag-shopping"></i></div><b id="aOrders">0</b><span>Orders</span></div>
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-tower-broadcast"></i></div><b id="aActive">0</b><span>Active</span></div>
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-coins"></i></div><b>₹<span id="aRevenue">0.00</span></b><span>Revenue</span></div>
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-server"></i></div><b id="aProviders">0</b><span>Providers</span></div>
+          <div class="stat-card"><div class="si2"><i class="fa-solid fa-layer-group"></i></div><b id="aServices">0</b><span>Services</span></div>
+        </div>
+      </div>
+
+      <div class="tabpane" id="tab-providers">
+        <div class="page-head">
+          <div><h1>API Providers</h1><p>Fox SMS & Simxpro (pre-configured via env vars).</p></div>
+          <button class="btn btn-ghost btn-sm" onclick="refreshAllProviderData()"><i class="fa-solid fa-rotate"></i> Refresh All</button>
+        </div>
+        <div class="alert info"><i class="fa-solid fa-circle-info"></i>
+          <div><b>API keys are secured in Netlify environment variables.</b> Set <code>FOX_SMS_API_KEY</code> and <code>SIMXPRO_API_KEY</code> in Site settings → Environment variables.</div>
+        </div>
+        <div id="providerList"></div>
+      </div>
+
+      <div class="tabpane" id="tab-services">
+        <div class="page-head">
+          <div><h1>Services</h1><p>Synced from providers. Set selling prices.</p></div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn btn-primary btn-sm" onclick="syncCatalog('foxsms')"><i class="fa-solid fa-download"></i> Sync Fox SMS</button>
+            <button class="btn btn-ghost btn-sm" onclick="syncCatalog('simxpro')"><i class="fa-solid fa-download"></i> Sync Simxpro</button>
+          </div>
+        </div>
+        <div id="svcAlert"></div>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Code</th><th>Service</th><th>Country</th><th>Provider</th><th>Cost</th><th>Selling</th><th>Profit</th><th>Stock</th><th>Status</th><th>Actions</th></tr></thead>
+            <tbody id="adminServicesBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tabpane" id="tab-deposits">
+        <div class="page-head"><div><h1>Deposits</h1><p>Approve/reject UPI deposits.</p></div></div>
+        <div class="tbl-wrap"><table><thead><tr><th>ID</th><th>User</th><th>Amount</th><th>Status</th><th>Actions</th></tr></thead><tbody id="adminDepositsBody"></tbody></table></div>
+      </div>
+
+      <div class="tabpane" id="tab-logs">
+        <div class="page-head"><div><h1>API Logs</h1><p>Activity log.</p></div><button class="btn btn-ghost btn-sm" onclick="clearLogs()"><i class="fa-solid fa-trash"></i> Clear</button></div>
+        <div class="card" style="padding:20px"><div id="logsList"></div></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer id="siteFooter">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a href="#home" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9.5 4.6 4l4 3.2h6.8L19.4 4l.6 5.5c.9 1.2 1.4 2.7 1.4 4.3 0 3.9-3.4 7.2-9.4 7.2S2.6 17.7 2.6 13.8c0-1.6.5-3.1 1.4-4.3Z" fill="#fff" opacity=".95"/><circle cx="9" cy="13" r="1.35" fill="#6d28d9"/><circle cx="15" cy="13" r="1.35" fill="#6d28d9"/></svg></span><span>MEOW <b>SMS</b></span></a>
+        <p>Real virtual numbers from Fox SMS & Simxpro. INR only.</p>
+      </div>
+      <div><h5>Platform</h5><ul><li><a href="#home">Home</a></li><li><a href="#buy">Buy Number</a></li><li><a href="#pricing">Pricing</a></li></ul></div>
+      <div><h5>Support</h5><ul><li><a href="#faq">FAQ</a></li><li><a href="mailto:support@meowsms.com">Contact</a></li></ul></div>
+      <div><h5>Payment</h5><p style="font-size:14px;color:var(--muted)">UPI · QR · INR only</p></div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="year"></span> MEOW SMS</span></div>
+  </div>
+</footer>
+
+<!-- AUTH MODAL -->
+<div class="modal" id="authModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('authModal')"><i class="fa-solid fa-xmark"></i></button>
+    <div id="loginPane">
+      <h3>Welcome back 👋</h3>
+      <p class="sub">Login to MEOW SMS.</p>
+      <div class="field"><label>Email</label><div class="inp-ico"><i class="fa-solid fa-envelope"></i><input class="inp" id="loginEmail" type="email" placeholder="you@email.com"></div></div>
+      <div class="field"><label>Password</label><div class="inp-ico"><i class="fa-solid fa-lock"></i><input class="inp" id="loginPass" type="password" placeholder="••••••••"></div></div>
+      <button class="btn btn-primary btn-block" onclick="doLogin()"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+      <p class="form-note">No account? <a href="javascript:void(0)" onclick="switchAuth('register')">Register</a></p>
+    </div>
+    <div id="registerPane" class="hidden">
+      <h3>Create account</h3>
+      <p class="sub">Start with ₹0 balance.</p>
+      <div class="field"><label>Full Name</label><div class="inp-ico"><i class="fa-solid fa-user"></i><input class="inp" id="regName" placeholder="John Doe"></div></div>
+      <div class="field"><label>Email</label><div class="inp-ico"><i class="fa-solid fa-envelope"></i><input class="inp" id="regEmail" type="email" placeholder="you@email.com"></div></div>
+      <div class="field"><label>Password</label><div class="inp-ico"><i class="fa-solid fa-lock"></i><input class="inp" id="regPass" type="password" placeholder="Min 8 chars"></div></div>
+      <div class="field"><label>Confirm</label><div class="inp-ico"><i class="fa-solid fa-lock"></i><input class="inp" id="regPass2" type="password" placeholder="Repeat"></div></div>
+      <button class="btn btn-primary btn-block" onclick="doRegister()"><i class="fa-solid fa-user-plus"></i> Create</button>
+      <p class="form-note">Have account? <a href="javascript:void(0)" onclick="switchAuth('login')">Login</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- UPI PAYMENT MODAL -->
+<div class="modal" id="upiPayModal">
+  <div class="modal-box" style="max-width:480px">
+    <button class="modal-close" onclick="closeUPIModal()"><i class="fa-solid fa-xmark"></i></button>
+    <h3><i class="fa-solid fa-qrcode" style="color:#c084fc;margin-right:8px"></i> Complete Payment</h3>
+    <p class="sub">Scan QR or click Pay Now.</p>
+    <div style="background:rgba(0,0,0,.35);border:1px solid var(--stroke);border-radius:14px;padding:16px;margin-bottom:18px">
+      <div style="display:flex;justify-content:space-between;padding:7px 0;font-size:13.5px"><span style="color:var(--muted)">Order ID</span><b id="upiOrderId">—</b></div>
+      <div style="display:flex;justify-content:space-between;padding:7px 0;font-size:13.5px;border-top:1px dashed rgba(168,85,247,.15)"><span style="color:var(--muted)">Amount</span><b id="upiAmountINR" style="color:#c084fc">—</b></div>
+    </div>
+    <div style="display:grid;place-items:center;padding:16px;background:#fff;border-radius:16px;margin-bottom:16px">
+      <img id="upiQRImage" alt="QR" src="" style="width:220px;height:220px">
+    </div>
+    <button class="btn btn-primary btn-block" onclick="payViaGateway()" style="margin-bottom:10px"><i class="fa-solid fa-arrow-up-right-from-square"></i> Pay Now</button>
+    <button class="btn btn-ghost btn-block" onclick="startStatusPolling()"><i class="fa-solid fa-rotate"></i> Check Status</button>
+    <div class="center" style="margin-top:12px"><span id="payStatusBadge"></span></div>
+  </div>
+</div>
+
+<!-- SYNC CATALOG MODAL -->
+<div class="modal" id="syncCatalogModal">
+  <div class="modal-box wide">
+    <button class="modal-close" onclick="closeModal('syncCatalogModal')"><i class="fa-solid fa-xmark"></i></button>
+    <h3><i class="fa-solid fa-cloud-arrow-down" style="color:#c084fc;margin-right:8px"></i> Sync Catalog</h3>
+    <p class="sub">Fetching from <b id="syncProviderLabel">Provider</b>…</p>
+    <div id="syncProgress" style="padding:20px 0">
+      <div id="syncStepText" style="color:var(--muted);font-size:14px"><i class="fa-solid fa-spinner fa-spin"></i> Connecting to provider API…</div>
+    </div>
+    <div id="syncResult" style="margin-top:10px"></div>
+    <div id="syncActions" style="display:none;gap:10px;margin-top:20px;flex-wrap:wrap">
+      <button class="btn btn-primary" onclick="importSyncedServices()"><i class="fa-solid fa-download"></i> Import All</button>
+      <button class="btn btn-ghost" onclick="closeModal('syncCatalogModal')">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   MEOW SMS — NETLIFY FRONTEND
+   Real API integration via /api/provider (Netlify Function)
+   ═══════════════════════════════════════════════════════════ */
+
+const LS_KEY = 'meowsms_netlify_v1';
+const $ = (s,r=document)=>r.querySelector(s);
+const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+
+// Provider definitions — API keys live in Netlify env vars, NOT here
+const PROVIDERS = [
+  { id: 'foxsms',  name: 'Fox SMS',  color: '#a855f7', icon: 'fa-brands fa-firefox-browser' },
+  { id: 'simxpro', name: 'Simxpro',  color: '#38bdf8', icon: 'fa-solid fa-sim-card' }
+];
+
+const FAQS = [
+  {q:'What is a virtual number?',a:'A real phone number not tied to a SIM. Rent short-term to receive OTP. Numbers are fetched live from Fox SMS and Simxpro.'},
+  {q:'How fast is SMS delivery?',a:'Most arrive in 5–60 seconds. The dashboard auto-polls the provider.'},
+  {q:'How long is a number active?',a:'20 minutes per rental. Provider refunds automatically if no SMS arrives.'},
+  {q:'What payment methods?',a:'UPI in Indian Rupees (₹).'},
+  {q:'Where do numbers come from?',a:'Real provider APIs — Fox SMS (REST v2) and Simxpro (SMS-Activate protocol). No fake numbers.'},
+  {q:'Is my data safe?',a:'API keys stored server-side in Netlify env vars. Never exposed to browser.'}
+];
+
+const DEFAULT_DB = {
+  user: null, users: [], orders: [], transactions: [], deposits: [],
+  services: [],  // imported from provider catalog
+  logs: [],
+  settings: { upiId: 'paytm.s4fcxmz@pty', apiKey: 'PAY32DCCEEA3A215D6B8EE95122', minDeposit: 83 }
+};
+
+let DB = null;
+let selectedProvider = null;
+let selectedCountry = null;
+let selectedService = null;
+let currentUPIOrder = null;
+let statusPollTimer = null;
+let pollCount = 0;
+let syncCatalogData = null;
+let orderPollers = {};
+
+function load(){
+  try {
+    const r = localStorage.getItem(LS_KEY);
+    DB = r ? JSON.parse(r) : JSON.parse(JSON.stringify(DEFAULT_DB));
+  } catch { DB = JSON.parse(JSON.stringify(DEFAULT_DB)); }
+  ['users','orders','transactions','deposits','services','logs'].forEach(k => { if(!DB[k]) DB[k] = []; });
+  if(!DB.settings) DB.settings = {...DEFAULT_DB.settings};
+}
+function save(){ localStorage.setItem(LS_KEY, JSON.stringify(DB)); }
+
+const money = n => Number(n||0).toFixed(2);
+const uid = p => p + '-' + Math.random().toString(36).slice(2,8).toUpperCase();
+const now = () => Date.now();
+
+function toast(msg, type='info'){
+  const icons = {ok:'fa-check', err:'fa-xmark', info:'fa-circle-info', warn:'fa-triangle-exclamation'};
+  const el = document.createElement('div');
+  el.className = 'toast ' + (type === 'warn' ? 'info' : type);
+  el.innerHTML = `<div class="ti"><i class="fa-solid ${icons[type]||icons.info}"></i></div><div>${msg}</div>`;
+  $('#toastWrap').appendChild(el);
+  setTimeout(() => { el.classList.add('out'); setTimeout(() => el.remove(), 300); }, 3600);
+}
+
+function openModal(id){ $('#'+id).classList.add('open'); document.body.style.overflow='hidden'; }
+function closeModal(id){ $('#'+id).classList.remove('open'); document.body.style.overflow=''; }
+function addLog(action, msg, level='info'){
+  DB.logs.unshift({ts:now(), action, msg, level});
+  if(DB.logs.length > 200) DB.logs = DB.logs.slice(0, 200);
+  save();
+}
+
+/* ── API CALL HELPER ── */
+async function callProvider(action, provider, params = {}){
+  const res = await fetch('/api/provider', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ action, provider, ...params })
+  });
+  const text = await res.text();
+  let data;
+  try { data = JSON.parse(text); } catch { throw new Error('Invalid response: ' + text.slice(0,100)); }
+  if (!res.ok) throw new Error(data.error || 'API error ' + res.status);
+  return data;
+}
+
+/* ── NAV ── */
+window.addEventListener('scroll', () => {
+  const nav = $('#nav');
+  if(window.scrollY > 24) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+});
+function toggleMobile(){ $('#mobileMenu')?.classList.toggle('open'); }
+function closeMobile(){ $('#mobileMenu')?.classList.remove('open'); }
+
+/* ── AUTH ── */
+function openAuth(m){ openModal('authModal'); switchAuth(m); }
+function switchAuth(m){
+  if(m === 'register'){ $('#loginPane').classList.add('hidden'); $('#registerPane').classList.remove('hidden'); }
+  else { $('#registerPane').classList.add('hidden'); $('#loginPane').classList.remove('hidden'); }
+}
+
+function doRegister(){
+  const name = $('#regName').value.trim();
+  const email = $('#regEmail').value.trim().toLowerCase();
+  const p1 = $('#regPass').value, p2 = $('#regPass2').value;
+  if(name.length < 2) return toast('Enter name', 'err');
+  if(!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(email)) return toast('Valid email required', 'err');
+  if(p1.length < 8) return toast('Password min 8 chars', 'err');
+  if(p1 !== p2) return toast('Passwords mismatch', 'err');
+  if(DB.users.find(u => u.email === email)) return toast('Email exists', 'err');
+  const user = {id: uid('USR'), name, email, balance: 0, orders: 0, status: 'Active', createdAt: now()};
+  DB.users.push(user); DB.user = user; save();
+  toast('Account created! Add money to buy.', 'ok');
+  closeModal('authModal'); enterDashboard();
+}
+
+function doLogin(){
+  const email = $('#loginEmail').value.trim().toLowerCase();
+  const pass = $('#loginPass').value;
+  if(!email || !pass) return toast('Fill fields', 'err');
+  const user = DB.users.find(u => u.email === email);
+  if(!user) return toast('Account not found. Register first.', 'err');
+  if(user.status === 'Blocked') return toast('Account blocked', 'err');
+  DB.user = user; save();
+  toast('Logged in', 'ok');
+  closeModal('authModal'); enterDashboard();
+}
+
+function logout(){
+  DB.user = null; save();
+  $('#app').classList.add('hidden');
+  $('#adminApp').classList.add('hidden');
+  $('#site').classList.remove('hidden');
+  $('#siteFooter').classList.remove('hidden');
+  window.scrollTo({top:0, behavior:'smooth'});
+  toast('Logged out', 'info');
+}
+
+function enterDashboard(){
+  $('#site').classList.add('hidden');
+  $('#siteFooter').classList.add('hidden');
+  $('#app').classList.remove('hidden');
+  $('#adminApp').classList.add('hidden');
+  window.scrollTo(0,0);
+  showView('dashboard');
+  renderAll();
+}
+
+function backToSite(){
+  $('#app').classList.add('hidden');
+  $('#adminApp').classList.add('hidden');
+  $('#site').classList.remove('hidden');
+  $('#siteFooter').classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+
+function requireLogin(){
+  if(DB.user){ enterDashboard(); return true; }
+  openAuth('login'); toast('Please login or register', 'info');
+  return false;
+}
+function startBuying(){ if(!requireLogin()) return; showView('buy'); }
+
+/* ── VIEWS ── */
+const VIEW_TITLES = {dashboard:'Dashboard', buy:'Buy Number', active:'Active Orders', sms:'Received SMS',
+  wallet:'Add Money', transactions:'Transactions', orders:'Order History', profile:'My Profile', admin:'Admin'};
+
+function showView(name, el){
+  $$('.view').forEach(v => v.classList.remove('active'));
+  const v = $('#view-' + name); if(v) v.classList.add('active');
+  $$('.side a.si').forEach(a => a.classList.remove('active'));
+  if(el) el.classList.add('active');
+  else { const m = $$('.side a.si').find(a => a.dataset.view === name); if(m) m.classList.add('active'); }
+  $('#viewTitle').textContent = VIEW_TITLES[name] || 'Dashboard';
+  closeSide();
+  if(name === 'dashboard') renderAll();
+  if(name === 'buy') renderBuyView();
+  if(name === 'active') renderActive();
+  if(name === 'sms') renderSMS();
+  if(name === 'wallet') renderWallet();
+  if(name === 'transactions') renderTransactions();
+  if(name === 'orders') renderOrders();
+  if(name === 'profile') renderProfile();
+}
+function openSide(){ $('#side').classList.add('open'); $('#sideOverlay').classList.add('on'); }
+function closeSide(){ $('#side').classList.remove('open'); $('#sideOverlay').classList.remove('on'); }
+function closeAdminSide(){ $('#adminSide').classList.remove('open'); $('#adminOverlay').classList.remove('on'); }
+
+/* ── BUY VIEW ── */
+function countryFlag(code){
+  const f = {US:'🇺🇸',GB:'🇬🇧',IN:'🇮🇳',CA:'🇨🇦',DE:'🇩🇪',FR:'🇫🇷',ID:'🇮🇩',PH:'🇵🇭',BR:'🇧🇷',NG:'🇳🇬',PK:'🇵🇰',BD:'🇧🇩',RU:'🇷🇺',VN:'🇻🇳',MY:'🇲🇾',TR:'🇹🇷',AU:'🇦🇺',JP:'🇯🇵',KR:'🇰🇷',MX:'🇲🇽',ES:'🇪🇸',IT:'🇮🇹',NL:'🇳🇱',SE:'🇸🇪'};
+  return f[code] || '🌍';
+}
+
+function renderBuyView(){
+  $('#buyWarning').innerHTML = `
+    <div class="alert info"><i class="fa-solid fa-circle-info"></i>
+      <div>Select <b>Provider</b> → <b>Country</b> → <b>Service</b> to buy. All numbers are fetched live from the provider API.</div>
+    </div>`;
+  renderProviderPicker();
+  renderCountryPicker('');
+  renderServicePicker('');
+  renderNumberResults();
+}
+
+function renderProviderPicker(){
+  $('#providerPickList').innerHTML = PROVIDERS.map(p => `
+    <div class="pick-item" onclick="selectProvider('${p.id}')">
+      <span style="color:${p.color};font-size:18px;width:22px;text-align:center"><i class="${p.icon}"></i></span>
+      <span class="nm">${p.name}</span>
+    </div>`).join('');
+}
+
+function selectProvider(id){
+  const p = PROVIDERS.find(x => x.id === id); if(!p) return;
+  selectedProvider = p;
+  selectedCountry = null; selectedService = null;
+  $('#pFlag').innerHTML = `<i class="${p.icon}" style="color:${p.color};font-size:18px"></i>`;
+  $('#pVal').textContent = p.name;
+  $('#pVal').classList.remove('ph');
+  $('#pickProvider').classList.remove('open');
+  $('#cFlag').textContent = '🌍'; $('#cVal').textContent = 'Select Country'; $('#cVal').classList.add('ph');
+  $('#sFlag').textContent = '📱'; $('#sVal').textContent = 'Select Service'; $('#sVal').classList.add('ph');
+  renderCountryPicker('');
+  renderServicePicker('');
+  renderNumberResults();
+}
+
+function getSyncedCountries(){
+  return DB.services.filter(s => s.status === 1 && s.providerId === selectedProvider?.id);
+}
+
+function renderCountryPicker(q){
+  if(!selectedProvider){
+    $('#countryList').innerHTML = `<div style="padding:20px;text-align:center;color:var(--muted);font-size:13px">Select a provider first</div>`;
+    return;
+  }
+  const services = DB.services.filter(s => s.status === 1 && s.providerId === selectedProvider.id);
+  const cmap = {};
+  services.forEach(s => {
+    if(!cmap[s.countryCode]) cmap[s.countryCode] = {code: s.countryCode, name: s.countryName, flag: countryFlag(s.countryCode)};
+  });
+  const list = Object.values(cmap).filter(c =>
+    c.name.toLowerCase().includes(q.toLowerCase()) || c.code.toLowerCase().includes(q.toLowerCase()));
+  $('#countryList').innerHTML = list.length
+    ? list.map(c => `<div class="pick-item" onclick="selectCountry('${c.code}')">
+        <span class="flag">${c.flag}</span><span class="nm">${c.name}</span><span class="pr">${c.code}</span>
+      </div>`).join('')
+    : `<div style="padding:20px;text-align:center;color:var(--muted);font-size:13px">No countries synced yet. Admin must sync the catalog.</div>`;
+}
+function filterCountry(q){ renderCountryPicker(q); }
+
+function renderServicePicker(q){
+  if(!selectedProvider || !selectedCountry){
+    $('#serviceList').innerHTML = `<div style="padding:20px;text-align:center;color:var(--muted);font-size:13px">Select a country first</div>`;
+    return;
+  }
+  const list = DB.services.filter(s => s.status === 1 && s.providerId === selectedProvider.id && s.countryCode === selectedCountry.code && s.serviceName.toLowerCase().includes(q.toLowerCase()));
+  $('#serviceList').innerHTML = list.length
+    ? list.map(s => `<div class="pick-item" onclick="selectServiceById('${s.id}')">
+        <span style="color:#c084fc;font-size:16px;width:20px;text-align:center"><i class="fa-solid fa-comment-sms"></i></span>
+        <span class="nm">${s.serviceName}</span>
+        <span class="pr">₹${money(s.sellingPrice)}</span>
+      </div>`).join('')
+    : `<div style="padding:20px;text-align:center;color:var(--muted);font-size:13px">No services in this country</div>`;
+}
+function filterService(q){ renderServicePicker(q); }
+
+function togglePick(id){
+  const el = $('#'+id); const isOpen = el.classList.contains('open');
+  $$('.pick').forEach(p => p.classList.remove('open'));
+  if(!isOpen) el.classList.add('open');
+}
+document.addEventListener('click', e => { if(!e.target.closest('.pick')) $$('.pick').forEach(p => p.classList.remove('open')); });
+
+function selectCountry(code){
+  const services = DB.services.filter(s => s.status === 1 && s.providerId === selectedProvider?.id && s.countryCode === code);
+  if(!services.length) return;
+  const sample = services[0];
+  selectedCountry = {code, name: sample.countryName, flag: countryFlag(code)};
+  selectedService = null;
+  $('#cFlag').textContent = selectedCountry.flag;
+  $('#cVal').textContent = selectedCountry.name;
+  $('#cVal').classList.remove('ph');
+  $('#sFlag').textContent = '📱'; $('#sVal').textContent = 'Select Service'; $('#sVal').classList.add('ph');
+  $('#pickCountry').classList.remove('open');
+  renderServicePicker('');
+  renderNumberResults();
+}
+
+function selectServiceById(id){
+  const s = DB.services.find(x => x.id === id); if(!s) return;
+  selectedService = s;
+  $('#sFlag').innerHTML = '<i class="fa-solid fa-comment-sms" style="color:#c084fc"></i>';
+  $('#sVal').textContent = s.serviceName;
+  $('#sVal').classList.remove('ph');
+  $('#pickService').classList.remove('open');
+  renderNumberResults();
+}
+
+function renderNumberResults(){
+  const box = $('#numberResults');
+  if(!selectedProvider || !selectedCountry || !selectedService){
+    box.innerHTML = `<div class="empty"><div class="ei"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <h4>Select provider, country & service</h4><p>All three required to fetch a real number.</p></div>`;
+    return;
+  }
+  box.innerHTML = `
+    <div class="num-card">
+      <span style="font-size:24px">${selectedCountry.flag}</span>
+      <div class="info">
+        <b>${selectedService.serviceName} · ${selectedCountry.name}</b>
+        <span>Provider: ${selectedProvider.name} · Code: <code>${selectedService.serviceCode}</code></span>
+      </div>
+      <span class="price">₹${money(selectedService.sellingPrice)}</span>
+      <button class="btn btn-primary btn-sm" onclick="purchaseNumber()" id="buyBtn"><i class="fa-solid fa-bolt"></i> Buy Now</button>
+    </div>`;
+}
+
+/* ── PURCHASE — REAL API CALL ── */
+async function purchaseNumber(){
+  if(!DB.user) return openAuth('login');
+  if(!selectedProvider || !selectedService) return toast('Select provider and service', 'err');
+  const price = parseFloat(selectedService.sellingPrice);
+  if(DB.user.balance < price) { toast('Insufficient balance. Add money first.', 'err'); return showView('wallet'); }
+
+  const btn = $('#buyBtn');
+  if(btn){ btn.disabled = true; btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Buying…'; }
+  toast('Contacting ' + selectedProvider.name + '…', 'info');
+
+  try {
+    const data = await callProvider('buy', selectedProvider.id, {
+      service: selectedService.serviceCode,
+      country: selectedService.providerCountryId || selectedService.countryCode
+    });
+
+    if(!data.success || !data.number) throw new Error(data.error || 'Provider could not allocate a number');
+
+    // Deduct balance only after successful provider response
+    DB.user.balance = +(DB.user.balance - price).toFixed(2);
+
+    const order = {
+      id: data.order_id || uid('ORD'),
+      providerOrderId: data.order_id,
+      providerId: selectedProvider.id,
+      providerName: selectedProvider.name,
+      userId: DB.user.id,
+      country: selectedCountry.name,
+      code: selectedCountry.code,
+      flag: selectedCountry.flag,
+      service: selectedService.serviceName,
+      serviceCode: selectedService.serviceCode,
+      number: data.number,
+      price: price,
+      status: 'active',
+      createdAt: now(),
+      expiresAt: now() + 20*60*1000,
+      sms: []
+    };
+    DB.orders.unshift(order);
+    DB.transactions.unshift({
+      id: uid('TX'), type: 'debit',
+      desc: `Purchase ${selectedService.serviceName} (${order.id})`,
+      amount: price, status: 'completed', date: now()
+    });
+    const u = DB.users.find(x => x.id === DB.user.id);
+    if(u){ u.balance = DB.user.balance; u.orders = (u.orders||0) + 1; }
+    save();
+    toast(`✅ Real number: ${data.number}`, 'ok');
+    addLog('Purchase', `${selectedService.serviceName} → ${data.number}`, 'success');
+    showView('active');
+    startOrderPolling(order.id);
+  } catch(err){
+    console.error(err);
+    toast('⚠️ ' + err.message, 'err');
+    addLog('Purchase Failed', err.message, 'error');
+  } finally {
+    if(btn){ btn.disabled = false; btn.innerHTML = '<i class="fa-solid fa-bolt"></i> Buy Now'; }
+  }
+}
+
+/* ── AUTO-POLL ORDER ── */
+function startOrderPolling(orderId){
+  if(orderPollers[orderId]) return;
+  orderPollers[orderId] = setInterval(async () => {
+    const o = DB.orders.find(x => x.id === orderId);
+    if(!o || o.status !== 'active'){ clearInterval(orderPollers[orderId]); delete orderPollers[orderId]; return; }
+    try {
+      const data = await callProvider('check', o.providerId, { order_id: o.providerOrderId || o.id });
+      if(data.success){
+        if(data.status === 'received'){
+          o.sms = [{from: o.service, text: `[OTP] ${data.code}`, time: now()}];
+          o.status = 'completed';
+          save(); renderActive(); renderSMS();
+          toast('📩 OTP received!', 'ok');
+          clearInterval(orderPollers[orderId]); delete orderPollers[orderId];
+        } else if(data.status === 'cancelled'){
+          o.status = 'cancelled';
+          DB.user.balance = +(DB.user.balance + o.price).toFixed(2);
+          save(); renderActive();
+          toast('Order cancelled — refunded', 'info');
+          clearInterval(orderPollers[orderId]); delete orderPollers[orderId];
+        }
+      }
+    } catch(e) { /* silent retry */ }
+  }, 10000); // poll every 10s
+}
+
+/* ── DASHBOARD ── */
+function myOrders(){ return DB.orders.filter(o => !DB.user || o.userId === DB.user.id); }
+function renderAll(){
+  if(!DB.user) return;
+  const o = myOrders();
+  const active = o.filter(x => x.status === 'active').length;
+  const done = o.filter(x => x.status === 'completed').length;
+  const spent = o.reduce((s,x) => s + x.price, 0);
+  $('#topBalance').textContent = money(DB.user.balance);
+  $('#statBalance').textContent = money(DB.user.balance);
+  $('#statTotal').textContent = o.length;
+  $('#statActive').textContent = active;
+  $('#statDone').textContent = done;
+  $('#statSpent').textContent = money(spent);
+  $('#dashName').textContent = DB.user.name.split(' ')[0];
+  $('#topAvatar').textContent = DB.user.name.charAt(0).toUpperCase();
+  const recent = o.slice(0, 5);
+  $('#recentOrders').innerHTML = recent.length
+    ? `<div class="tbl-wrap"><table><thead><tr><th>Order</th><th>Provider</th><th>Service</th><th>Number</th><th>Price</th><th>Status</th></tr></thead>
+       <tbody>${recent.map(o => `<tr>
+        <td class="mono">${o.id}</td>
+        <td>${o.providerName || '—'}</td>
+        <td>${o.service}</td>
+        <td class="mono">${o.number}</td>
+        <td>₹${money(o.price)}</td>
+        <td>${badge(o.status)}</td>
+       </tr>`).join('')}</tbody></table></div>`
+    : `<div class="empty"><div class="ei"><i class="fa-solid fa-bag-shopping"></i></div>
+       <h4>No orders</h4><p>Buy your first real number.</p>
+       <button class="btn btn-primary btn-sm" onclick="showView('buy')">Buy</button></div>`;
+}
+
+function badge(s){
+  const map = {active:['b-active','Active'], completed:['b-done','Completed'], cancelled:['b-cancel','Cancelled'],
+    expired:['b-exp','Expired'], pending:['b-pend','Pending'], approved:['b-active','Approved'],
+    rejected:['b-cancel','Rejected'], completed_tx:['b-done','Completed']};
+  const [c,l] = map[s] || ['b-exp', s];
+  return `<span class="badge ${c}">${l}</span>`;
+}
+
+function renderActive(){
+  const list = myOrders().filter(o => o.status === 'active');
+  const box = $('#activeList');
+  if(!list.length){
+    box.innerHTML = `<div class="empty"><div class="ei"><i class="fa-solid fa-tower-broadcast"></i></div>
+      <h4>No active orders</h4><button class="btn btn-primary btn-sm" onclick="showView('buy')">Buy</button></div>`;
+    return;
+  }
+  box.innerHTML = list.map(o => `
+    <div class="order-card">
+      <div class="oc-top">
+        <span class="flag">${o.flag}</span>
+        <div><h4>${o.service} · ${o.country}</h4>
+          <div class="sub">${o.id} · ${o.providerName}</div></div>
+        <div class="timer"><i class="fa-solid fa-hourglass-half"></i> <span>--:--</span></div>
+      </div>
+      <div class="num-box">
+        <i class="fa-solid fa-phone" style="color:#c084fc"></i>
+        <b>${o.number}</b>
+        <button class="btn btn-ghost btn-sm copy" onclick="copyText('${o.number}')"><i class="fa-solid fa-copy"></i></button>
+      </div>
+      <div class="oc-actions">
+        <button class="btn btn-primary btn-sm" onclick="checkOrderSMS('${o.id}')"><i class="fa-solid fa-rotate"></i> Check SMS</button>
+      </div>
+      ${o.sms.length ? `<div class="sms-list">${o.sms.map(m => `
+        <div class="sms-item"><div class="st"><i class="fa-solid fa-comment-sms"></i> ${m.from||'Provider'}</div>
+          <div class="body">${m.text}</div></div>`).join('')}</div>`
+      : `<p style="margin-top:14px;font-size:13px;color:var(--muted)"><i class="fa-solid fa-spinner fa-spin"></i> Waiting for SMS (auto-refresh every 10s)…</p>`}
+    </div>`).join('');
+  tickTimers();
+}
+
+async function checkOrderSMS(id){
+  const o = DB.orders.find(x => x.id === id); if(!o) return;
+  toast('Checking ' + o.providerName + '…', 'info');
+  try {
+    const data = await callProvider('check', o.providerId, { order_id: o.providerOrderId || o.id });
+    if(data.success){
+      if(data.status === 'received'){
+        o.sms = [{from: o.service, text: `[OTP] ${data.code}`, time: now()}];
+        o.status = 'completed';
+        save(); renderActive(); toast('📩 OTP: ' + data.code, 'ok');
+      } else if(data.sms && data.sms.length){
+        o.sms = data.sms; save(); renderActive();
+      } else toast('No new messages yet', 'info');
+    }
+  } catch(e){ toast('⚠️ ' + e.message, 'err'); }
+}
+
+function copyText(t){ navigator.clipboard?.writeText(t).then(() => toast('Copied', 'ok')).catch(() => toast('Failed', 'err')); }
+
+function renderSMS(){
+  const all = [];
+  myOrders().forEach(o => o.sms.forEach(m => all.push({...m, order:o})));
+  all.sort((a,b) => b.time - a.time);
+  $('#smsList').innerHTML = all.length
+    ? all.map(m => `<div class="order-card" style="background:rgba(255,255,255,.035);border-color:var(--stroke)">
+        <div class="oc-top"><span class="flag">${m.order.flag}</span>
+          <div><h4>${m.order.service} · ${m.order.number}</h4><div class="sub">${m.order.id}</div></div>
+          ${badge(m.order.status)}
+        </div>
+        <div class="sms-item"><div class="st">${m.from||'Provider'}</div><div class="body">${m.text}</div></div>
+      </div>`).join('')
+    : `<div class="empty"><div class="ei"><i class="fa-solid fa-comment-sms"></i></div><h4>No messages</h4></div>`;
+}
+function refreshSMS(){
+  const active = myOrders().filter(o => o.status === 'active');
+  active.forEach(o => checkOrderSMS(o.id));
+  if(!active.length) toast('No active orders', 'info');
+}
+
+/* ── WALLET ── */
+function setAmount(v, el){
+  $('#depositAmount').value = v;
+  $$('#amountChips .chip').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+}
+function renderWallet(){
+  $('#walletBalance').textContent = money(DB.user.balance);
+  const list = DB.deposits.filter(d => d.userId === DB.user.id);
+  $('#depositList').innerHTML = list.length
+    ? list.slice(0, 6).map(d => `
+      <div style="display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid rgba(168,85,247,.1)">
+        <div class="ic-box" style="width:38px;height:38px;font-size:14px;margin:0;border-radius:11px"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+        <div style="flex:1"><b style="font-size:14px">₹${money(d.amountINR)}</b>
+          <div style="font-size:11.5px;color:var(--muted)">${new Date(d.date).toLocaleDateString()}</div></div>
+        ${badge(d.status)}
+      </div>`).join('')
+    : `<p style="color:var(--muted);font-size:13.5px;text-align:center;padding:24px 0">No deposits yet.</p>`;
+}
+
+function generateOrderId(){
+  const d = new Date();
+  const yy = String(d.getFullYear()).slice(-2);
+  const mm = String(d.getMonth()+1).padStart(2,'0');
+  const dd = String(d.getDate()).padStart(2,'0');
+  const rand = Array.from({length:6}, () => '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'[Math.floor(Math.random()*36)]).join('');
+  return 'ORD' + yy + mm + dd + rand;
+}
+
+function createUPIOrder(){
+  const inr = parseFloat($('#depositAmount').value);
+  if(isNaN(inr) || inr < 83) return toast('Minimum ₹83', 'err');
+  if(inr > 100000) return toast('Max ₹1,00,000', 'err');
+  const oid = generateOrderId();
+  currentUPIOrder = {orderId: oid, amountINR: Math.round(inr)};
+  pollCount = 0;
+  DB.deposits.unshift({id: oid, userId: DB.user.id, userName: DB.user.name, amountINR: Math.round(inr), method:'upi', status:'pending', date: now()});
+  save();
+  $('#upiOrderId').textContent = oid;
+  $('#upiAmountINR').textContent = `₹${Math.round(inr)}`;
+  const uri = `upi://pay?pa=${encodeURIComponent(DB.settings.upiId)}&pn=MEOW%20SMS&am=${Math.round(inr)}&cu=INR&tn=${oid}`;
+  $('#upiQRImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=10&data=${encodeURIComponent(uri)}`;
+  $('#payStatusBadge').innerHTML = '<span class="badge b-pend">Waiting…</span>';
+  openModal('upiPayModal');
+  startStatusPolling(true);
+}
+
+function payViaGateway(){
+  if(!currentUPIOrder) return;
+  const url = `https://vcgatewaypro.com/payment_api.php?api_key=${DB.settings.apiKey}&order_id=${currentUPIOrder.orderId}&amount=${currentUPIOrder.amountINR}`;
+  window.open(url, '_blank', 'noopener');
+  toast('Opening gateway…', 'info');
+}
+
+function startStatusPolling(silent){
+  if(!currentUPIOrder) return;
+  if(statusPollTimer) clearInterval(statusPollTimer);
+  if(!silent) toast('Checking…', 'info');
+  checkPaymentStatus();
+  statusPollTimer = setInterval(checkPaymentStatus, 5000);
+}
+
+async function checkPaymentStatus(){
+  if(!currentUPIOrder) return;
+  pollCount++;
+  // Payment verification is manual in this demo — admin approves.
+  if(pollCount >= 12){
+    $('#payStatusBadge').innerHTML = '<span class="badge b-wait">Awaiting admin approval</span>';
+  }
+}
+
+function creditWallet(oid){
+  const d = DB.deposits.find(x => x.id === oid);
+  if(!d || d.status === 'approved') return;
+  d.status = 'approved';
+  DB.user.balance = +(DB.user.balance + d.amountINR).toFixed(2);
+  const u = DB.users.find(x => x.id === DB.user.id); if(u) u.balance = DB.user.balance;
+  DB.transactions.unshift({id: uid('TX'), type:'credit', desc:`UPI deposit ${oid}`, amount: d.amountINR, status:'completed', date: now()});
+  save();
+  toast(`✅ ₹${money(d.amountINR)} credited!`, 'ok');
+  setTimeout(() => { closeUPIModal(); renderWallet(); renderAll(); }, 1500);
+}
+
+function closeUPIModal(){
+  if(statusPollTimer) clearInterval(statusPollTimer);
+  closeModal('upiPayModal'); currentUPIOrder = null; pollCount = 0;
+}
+
+function renderTransactions(){
+  const list = DB.transactions;
+  $('#txBody').innerHTML = list.length
+    ? list.map(t => `<tr>
+        <td class="mono">${t.id}</td>
+        <td>${t.type === 'credit' ? '<span style="color:#6ee7b7">Credit</span>' :
+             t.type === 'debit' ? '<span style="color:#fda4af">Debit</span>' : 'Deposit'}</td>
+        <td>${t.desc}</td>
+        <td style="font-weight:700;color:${t.type==='debit'?'#fda4af':'#6ee7b7'}">${t.type==='debit'?'−':'+'}₹${money(t.amount)}</td>
+        <td>${badge(t.status === 'completed' ? 'completed_tx' : t.status)}</td>
+        <td style="font-size:12.5px;color:var(--muted)">${new Date(t.date).toLocaleString()}</td>
+      </tr>`).join('')
+    : `<tr><td colspan="6" style="text-align:center;padding:40px;color:var(--muted)">No transactions</td></tr>`;
+}
+
+function renderOrders(){
+  const list = myOrders();
+  $('#ordersBody').innerHTML = list.length
+    ? list.map(o => `<tr>
+        <td class="mono">${o.id}</td><td>${o.flag} ${o.country}</td><td>${o.service}</td>
+        <td class="mono">${o.number}</td><td>₹${money(o.price)}</td><td>${badge(o.status)}</td>
+        <td style="font-size:12.5px;color:var(--muted)">${new Date(o.createdAt).toLocaleString()}</td>
+      </tr>`).join('')
+    : `<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--muted)">No orders</td></tr>`;
+}
+
+function renderProfile(){
+  if(!DB.user) return;
+  $('#profName').textContent = DB.user.name;
+  $('#profEmail').textContent = DB.user.email;
+  $('#profId').textContent = DB.user.id;
+  $('#profAv').textContent = DB.user.name.charAt(0).toUpperCase();
+  $('#setName').value = DB.user.name;
+  $('#setEmail').value = DB.user.email;
+}
+function saveProfile(){
+  const name = $('#setName').value.trim();
+  const email = $('#setEmail').value.trim().toLowerCase();
+  if(name.length < 2) return toast('Name too short', 'err');
+  if(!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(email)) return toast('Invalid email', 'err');
+  DB.user.name = name; DB.user.email = email;
+  const u = DB.users.find(x => x.id === DB.user.id);
+  if(u){ u.name = name; u.email = email; }
+  save(); renderProfile(); renderAll(); toast('Updated', 'ok');
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ADMIN PANEL
+   ═══════════════════════════════════════════════════════════ */
+function openAdmin(){
+  $('#app').classList.add('hidden');
+  $('#site').classList.add('hidden');
+  $('#siteFooter').classList.add('hidden');
+  $('#adminApp').classList.remove('hidden');
+  window.scrollTo(0,0);
+  renderAdmin();
+  showAdminTab('overview');
+}
+function closeAdmin(){
+  $('#adminApp').classList.add('hidden');
+  if(DB.user){ $('#app').classList.remove('hidden'); renderAll(); }
+  else backToSite();
+}
+function showAdminTab(name, el){
+  $$('.tabpane').forEach(t => t.classList.remove('active'));
+  const p = $('#tab-'+name); if(p) p.classList.add('active');
+  $$('#adminSide a.si').forEach(a => a.classList.remove('active'));
+  if(el) el.classList.add('active');
+  closeAdminSide();
+  if(name === 'providers') renderProviderList();
+  if(name === 'services') renderAdminServices();
+  if(name === 'logs') renderLogs();
+  renderAdmin();
+}
+function renderAdmin(){
+  const orders = DB.orders;
+  const active = orders.filter(o => o.status === 'active').length;
+  const revenue = orders.reduce((s,o) => s + o.price, 0);
+  $('#aUsers').textContent = DB.users.length;
+  $('#aOrders').textContent = orders.length;
+  $('#aActive').textContent = active;
+  $('#aRevenue').textContent = money(revenue);
+  $('#aProviders').textContent = PROVIDERS.length;
+  $('#aServices').textContent = DB.services.length;
+  $('#provCount').textContent = PROVIDERS.length;
+  $('#svcCount').textContent = DB.services.length;
+  renderAdminDeposits();
+}
+
+/* ── PROVIDER LIST ── */
+async function renderProviderList(){
+  const box = $('#providerList');
+  box.innerHTML = PROVIDERS.map(p => `
+    <div class="provider-card" id="pc-${p.id}">
+      <div class="pc-head">
+        <div class="pc-logo" style="background:${p.color}">${p.name.charAt(0)}</div>
+        <div class="pc-info">
+          <h4>${p.name}</h4>
+          <div class="pc-url">${p.id === 'foxsms' ? 'https://foxsms.xyz/api/v2' : 'https://simxpro.org/api/stubs/handler_api.php'}</div>
+        </div>
+        <div><span class="badge b-active">Active</span></div>
+      </div>
+      <div class="pc-body">
+        <div><div class="lbl">Balance</div><div class="val green" id="bal-${p.id}">Loading…</div></div>
+        <div><div class="lbl">Services</div><div class="val purple" id="svc-${p.id}">${DB.services.filter(s => s.providerId === p.id).length}</div></div>
+        <div><div class="lbl">Status</div><div class="val" id="st-${p.id}">Checking…</div></div>
+        <div><div class="lbl">API Key</div><div class="val" style="font-size:11px;color:var(--muted)">Env var ✓</div></div>
+      </div>
+      <div class="pc-actions">
+        <button class="btn btn-primary btn-sm" onclick="syncCatalog('${p.id}')"><i class="fa-solid fa-cloud-arrow-down"></i> Sync Catalog</button>
+        <button class="btn btn-ghost btn-sm" onclick="checkBalance('${p.id}')"><i class="fa-solid fa-wallet"></i> Check Balance</button>
+      </div>
+    </div>`).join('');
+  // Auto-check balances
+  PROVIDERS.forEach(p => checkBalance(p.id));
+}
+
+async function checkBalance(providerId){
+  try {
+    const data = await callProvider('balance', providerId);
+    const el = $('#bal-' + providerId);
+    const st = $('#st-' + providerId);
+    if(el) el.textContent = data.success ? '₹' + money(data.balance) : 'Error';
+    if(st) { st.textContent = data.success ? 'Online' : 'Offline'; st.style.color = data.success ? '#6ee7b7' : '#fda4af'; }
+    if(!data.success) addLog('Balance Failed', providerId + ': ' + (data.error || 'unknown'), 'error');
+  } catch(e){
+    const el = $('#bal-' + providerId); const st = $('#st-' + providerId);
+    if(el) el.textContent = 'Unreachable';
+    if(st) { st.textContent = 'Offline'; st.style.color = '#fda4af'; }
+    addLog('Balance Error', providerId + ': ' + e.message, 'error');
+  }
+}
+
+async function refreshAllProviderData(){
+  toast('Refreshing all providers…', 'info');
+  for(const p of PROVIDERS) await checkBalance(p.id);
+  renderProviderList();
+}
+
+/* ── SYNC CATALOG ── */
+async function syncCatalog(providerId){
+  const p = PROVIDERS.find(x => x.id === providerId); if(!p) return;
+  $('#syncProviderLabel').textContent = p.name;
+  $('#syncProgress').innerHTML = `<div id="syncStepText" style="color:var(--muted);font-size:14px"><i class="fa-solid fa-spinner fa-spin"></i> Fetching catalog from ${p.name}…</div>`;
+  $('#syncResult').innerHTML = '';
+  $('#syncActions').style.display = 'none';
+  openModal('syncCatalogModal');
+
+  try {
+    const data = await callProvider('catalog', providerId);
+    if(!data.success) throw new Error(data.error || 'Catalog fetch failed');
+
+    const countries = data.countries || [];
+    const totalServices = countries.reduce((s,c) => s + (c.services?.length || 0), 0);
+
+    syncCatalogData = { providerId, providerName: p.name, countries };
+    $('#syncProgress').innerHTML = `<div style="color:#6ee7b7;font-size:14px"><i class="fa-solid fa-check-circle"></i> Fetched successfully</div>`;
+    $('#syncResult').innerHTML = `
+      <div class="alert ok"><i class="fa-solid fa-check-circle"></i>
+        <div><b>${countries.length} countries</b> · <b>${totalServices} services</b> found.</div>
+      </div>`;
+    $('#syncActions').style.display = 'flex';
+    addLog('Catalog Sync', `${p.name}: ${countries.length} countries, ${totalServices} services`, 'success');
+  } catch(err){
+    $('#syncProgress').innerHTML = `<div style="color:#fda4af;font-size:14px"><i class="fa-solid fa-circle-xmark"></i> Failed</div>`;
+    $('#syncResult').innerHTML = `<div class="alert err"><i class="fa-solid fa-circle-xmark"></i><div><b>Error:</b> ${err.message}</div></div>`;
+    addLog('Catalog Failed', `${p.name}: ${err.message}`, 'error');
+  }
+}
+
+function importSyncedServices(){
+  if(!syncCatalogData) return toast('No data to import', 'err');
+  const { providerId, providerName, countries } = syncCatalogData;
+  const existing = new Set(DB.services.map(s => `${s.providerId}|${s.serviceCode}|${s.countryCode}`));
+  let added = 0, updated = 0;
+
+  countries.forEach(c => {
+    (c.services || []).forEach(s => {
+      const key = `${providerId}|${s.service_code}|${c.code}`;
+      const existingSvc = DB.services.find(x => x.providerId === providerId && x.serviceCode === s.service_code && x.countryCode === c.code);
+      if(existingSvc){
+        existingSvc.providerPrice = s.price;
+        existingSvc.stock = s.stock;
+        existingSvc.inStock = s.in_stock;
+        updated++;
+      } else {
+        DB.services.push({
+          id: uid('SVC'),
+          providerId, providerName,
+          serviceCode: s.service_code,
+          serviceName: s.name,
+          countryCode: c.code,
+          countryName: c.name,
+          providerCountryId: c.code,
+          providerPrice: s.price,
+          sellingPrice: +(s.price * 1.5).toFixed(2), // default 50% markup
+          stock: s.stock,
+          inStock: s.in_stock,
+          status: 1,
+          createdAt: now()
+        });
+        added++;
+      }
+    });
+  });
+
+  save();
+  closeModal('syncCatalogModal');
+  toast(`✅ ${added} added, ${updated} updated`, 'ok');
+  addLog('Import', `${providerName}: +${added}, ~${updated}`, 'success');
+  renderAdminServices();
+  renderAdmin();
+  renderPublicCountries();
+}
+
+/* ── SERVICES TABLE ── */
+function renderAdminServices(){
+  const list = DB.services;
+  if(!list.length){
+    $('#svcAlert').innerHTML = `<div class="alert warn"><i class="fa-solid fa-info-circle"></i>
+      <div><b>No services yet.</b> Click <b>Sync Fox SMS</b> or <b>Sync Simxpro</b> above to fetch real services from the providers.</div></div>`;
+  } else $('#svcAlert').innerHTML = '';
+
+  $('#adminServicesBody').innerHTML = list.length
+    ? list.map(s => {
+        const profit = +(s.sellingPrice - s.providerPrice).toFixed(2);
+        const margin = s.sellingPrice > 0 ? (profit / s.sellingPrice * 100).toFixed(0) : 0;
+        const p = PROVIDERS.find(x => x.id === s.providerId);
+        return `<tr>
+          <td><span class="mono" style="background:rgba(168,85,247,.15);padding:3px 9px;border-radius:6px;font-size:11.5px">${s.serviceCode}</span></td>
+          <td><b>${s.serviceName}</b></td>
+          <td>${countryFlag(s.countryCode)} ${s.countryName} <span style="color:var(--muted);font-size:11px">(${s.countryCode})</span></td>
+          <td><span style="font-size:12px;color:var(--muted)">${p?.name || s.providerName}</span></td>
+          <td style="color:#c084fc;font-family:'Sora';font-weight:600">₹${money(s.providerPrice)}</td>
+          <td><input class="inp" type="number" step="0.01" value="${money(s.sellingPrice)}" style="width:90px;padding:6px 10px;font-size:13px" onchange="updateSellingPrice('${s.id}', this.value)"></td>
+          <td><div style="color:#6ee7b7;font-weight:700">+₹${money(profit)}</div><div style="font-size:11px;color:var(--muted)">${margin}%</div></td>
+          <td>${s.stock || 0}</td>
+          <td>${s.status ? '<span class="badge b-active">Active</span>' : '<span class="badge b-exp">Inactive</span>'}</td>
+          <td>
+            <button class="btn btn-ghost btn-sm" onclick="toggleServiceStatus('${s.id}')"><i class="fa-solid fa-power-off"></i></button>
+            <button class="btn btn-danger btn-sm" onclick="deleteService('${s.id}')"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>`;
+      }).join('')
+    : `<tr><td colspan="10" style="text-align:center;padding:40px;color:var(--muted)">No services. Sync a provider first.</td></tr>`;
+}
+
+function updateSellingPrice(id, val){
+  const s = DB.services.find(x => x.id === id); if(!s) return;
+  const n = parseFloat(val);
+  if(isNaN(n) || n <= 0) return toast('Invalid price', 'err');
+  s.sellingPrice = +n.toFixed(2);
+  save(); renderAdminServices(); toast('Price updated', 'ok');
+}
+function toggleServiceStatus(id){
+  const s = DB.services.find(x => x.id === id); if(!s) return;
+  s.status = s.status ? 0 : 1;
+  save(); renderAdminServices();
+  toast(`${s.serviceName} ${s.status?'enabled':'disabled'}`, 'ok');
+}
+function deleteService(id){
+  const s = DB.services.find(x => x.id === id); if(!s) return;
+  if(!confirm(`Delete ${s.serviceName}?`)) return;
+  DB.services = DB.services.filter(x => x.id !== id);
+  save(); renderAdminServices(); renderAdmin();
+  toast('Deleted', 'ok');
+}
+
+/* ── DEPOSITS ── */
+function renderAdminDeposits(){
+  $('#adminDepositsBody').innerHTML = DB.deposits.length
+    ? DB.deposits.map(d => `<tr>
+        <td class="mono">${d.id}</td><td>${d.userName}</td>
+        <td style="font-weight:700;color:#6ee7b7">₹${money(d.amountINR)}</td>
+        <td>${badge(d.status)}</td>
+        <td>${d.status === 'pending' ? `
+          <button class="btn btn-success btn-sm" onclick="approveDeposit('${d.id}')"><i class="fa-solid fa-check"></i></button>
+          <button class="btn btn-danger btn-sm" onclick="rejectDeposit('${d.id}')"><i class="fa-solid fa-xmark"></i></button>
+        ` : '—'}</td>
+      </tr>`).join('')
+    : `<tr><td colspan="5" style="text-align:center;padding:34px;color:var(--muted)">No deposits</td></tr>`;
+}
+function approveDeposit(id){
+  const d = DB.deposits.find(x => x.id === id);
+  if(!d || d.status !== 'pending') return;
+  d.status = 'approved';
+  const u = DB.users.find(x => x.id === d.userId);
+  if(u){ u.balance = +(u.balance + d.amountINR).toFixed(2); if(DB.user && DB.user.id === u.id) DB.user.balance = u.balance; }
+  DB.transactions.unshift({id: uid('TX'), type:'credit', desc:`Manual deposit ${id}`, amount: d.amountINR, status:'completed', date: now()});
+  save(); renderAdmin(); toast('Approved', 'ok');
+}
+function rejectDeposit(id){
+  const d = DB.deposits.find(x => x.id === id);
+  if(!d || d.status !== 'pending') return;
+  d.status = 'rejected';
+  save(); renderAdmin(); toast('Rejected', 'err');
+}
+
+/* ── LOGS ── */
+function renderLogs(){
+  const list = DB.logs;
+  if(!list.length){
+    $('#logsList').innerHTML = `<div class="empty" style="padding:40px"><div class="ei"><i class="fa-solid fa-list-check"></i></div><h4>No logs</h4></div>`;
+    return;
+  }
+  $('#logsList').innerHTML = list.slice(0, 100).map(l => `
+    <div style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid rgba(168,85,247,.1);font-size:13px">
+      <div style="font-family:'Sora',monospace;font-size:11.5px;color:var(--muted);flex-shrink:0;width:130px">${new Date(l.ts).toLocaleString()}</div>
+      <div style="font-weight:600;flex-shrink:0;width:140px">${l.action}</div>
+      <div style="color:var(--muted);flex:1;word-break:break-word">${l.msg}</div>
+      <div style="padding:2px 8px;border-radius:6px;font-size:10.5px;font-weight:700;flex-shrink:0;background:${l.level==='success'?'rgba(52,211,153,.15)':l.level==='error'?'rgba(251,113,133,.15)':'rgba(168,85,247,.15)'};color:${l.level==='success'?'#6ee7b7':l.level==='error'?'#fda4af':'#d8b4fe'}">${l.level.toUpperCase()}</div>
+    </div>`).join('');
+}
+function clearLogs(){
+  if(!confirm('Clear all logs?')) return;
+  DB.logs = []; save(); renderLogs(); toast('Cleared', 'ok');
+}
+
+/* ── PUBLIC ── */
+function renderPublicCountries(){
+  const countries = {};
+  DB.services.filter(s => s.status === 1).forEach(s => {
+    if(!countries[s.countryCode]){
+      countries[s.countryCode] = {code: s.countryCode, name: s.countryName, flag: countryFlag(s.countryCode), minPrice: s.sellingPrice};
+    } else if(s.sellingPrice < countries[s.countryCode].minPrice){
+      countries[s.countryCode].minPrice = s.sellingPrice;
+    }
+  });
+  const arr = Object.values(countries).slice(0, 8);
+  $('#countryTiles').innerHTML = arr.length
+    ? arr.map(c => `<div class="tile" onclick="quickBuy('${c.code}')">
+        <span class="flag">${c.flag}</span>
+        <div><div class="nm">${c.name}</div><div class="pr">from ₹${money(c.minPrice)}</div></div>
+        <i class="fa-solid fa-arrow-right go"></i>
+      </div>`).join('')
+    : `<div class="empty" style="grid-column:1/-1"><div class="ei"><i class="fa-solid fa-globe"></i></div>
+        <h4>No countries yet</h4><p>Admin is syncing providers. Check back soon.</p></div>`;
+}
+
+function quickBuy(code){
+  if(!requireLogin()) return;
+  showView('buy');
+  setTimeout(() => {
+    const svc = DB.services.find(s => s.countryCode === code && s.status === 1);
+    if(svc){
+      selectProvider(svc.providerId);
+      setTimeout(() => selectCountry(code), 50);
+    }
+  }, 100);
+}
+
+function renderFAQ(){
+  $('#faqWrap').innerHTML = FAQS.map((f,i) => `
+    <div class="faq" id="faq${i}">
+      <button class="faq-q" onclick="toggleFAQ(${i})">
+        <span class="qi"><i class="fa-solid fa-plus"></i></span>
+        <span>${f.q}</span>
+        <i class="fa-solid fa-chevron-down ch"></i>
+      </button>
+      <div class="faq-a"><p>${f.a}</p></div>
+    </div>`).join('');
+}
+function toggleFAQ(i){
+  const el = $('#faq'+i);
+  const open = el.classList.contains('open');
+  $$('.faq').forEach(f => { f.classList.remove('open'); f.querySelector('.faq-a').style.maxHeight = null; });
+  if(!open){
+    el.classList.add('open');
+    const a = el.querySelector('.faq-a');
+    a.style.maxHeight = a.scrollHeight + 'px';
+  }
+}
+
+/* ── TIMER ── */
+function tickTimers(){
+  $$('[data-exp]').forEach(el => {
+    const left = Math.max(0, (+el.dataset.exp) - now());
+    const m = Math.floor(left/60000), s = Math.floor(left%60000/1000);
+    el.querySelector('span').textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    if(left <= 0) el.querySelector('span').textContent = 'Expired';
+  });
+}
+setInterval(tickTimers, 1000);
+
+/* ── INIT ── */
+(function init(){
+  load();
+  renderFAQ();
+  renderPublicCountries();
+  $('#year').textContent = new Date().getFullYear();
+  if(DB.user) enterDashboard();
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape'){ $$('.modal').forEach(m => m.classList.remove('open')); document.body.style.overflow = ''; }
+  });
+  $$('.modal').forEach(m => {
+    m.addEventListener('click', e => { if(e.target === m){ m.classList.remove('open'); document.body.style.overflow = ''; } });
+  });
+  console.log('✅ MEOW SMS loaded. Providers: Fox SMS + Simxpro');
+})();
+</script>
+</body>
+</html>
